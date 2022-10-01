@@ -2,4 +2,9 @@
 
 {% block content %}
 <h1>Bookflix</h1>
+
+{% comment %} Below is just for testing. Can be removed later. {% endcomment %}
+{% if user.is_authenticated %}
+    <h3>Hi, {{ user.username }}</h3>
+{% endif %}
 {% endblock %}
