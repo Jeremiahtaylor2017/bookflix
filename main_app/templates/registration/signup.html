@@ -1,11 +1,51 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Sign Up</h1>
+<div class="log-background absolute flex min-h-[80rem] w-full bg-cover">
 
-<form action="{% url 'signup' %}" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Sign Up">
-</form>
+    <main>
+        <h1 class="absolute font-bold text-5xl text-red-600 left-4 top-4">
+            BOOKFLIX
+        </h1>
+        <form action="{% url 'signup' %}" method="post"
+        class="log-form justify-center items-center absolute 
+        border border-black rounded-xl text-white bg-black/75 h-[50rem] w-[28rem] top-[31rem] 
+        left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <h1 class="absolute left-20 top-20 text-5xl font-semibold">
+                Sign Up
+            </h1>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Sign Up" class="absolute left-1/2 bottom-[7rem]
+            -translate-x-1/2 -translate-y-1/2 bg-red-600 w-3/4 h-12 rounded-lg font-bold 
+            hover:bg-red-500 hover:text-black cursor-pointer">
+            <span class="absolute bottom-20 left-20 text-gray-400">
+                Already have an account? 
+                <a href="{% url 'login' %}" class="font-bold text-white">
+                    Login now
+                </a>
+            </span>
+        </form>
+    </main>
+
+    <footer class="absolute grid grid-rows-[3rem_1fr_3rem] items-center gap-1 bottom-0 
+    bg-black/75 text-gray-400 w-full p-10">
+        <p>Contact us: 1-800-555-3245</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 pb-3 gap-3 ">
+            <p>FAQ</p>
+            <p>help Center</p>
+            <p>Terms of Service</p>
+            <p>Privacy</p>
+            <p>Cookie Prefrences</p>
+            <p>Corporate Information</p>
+        </div>
+        <p class="relative bg-black border border-gray-400 w-24 p-2">
+            English 
+            <span class="absolute right-3 top-0.5 text-xl">
+                ⌄
+            </span>
+        </p>
+    </footer>
+
+</div>
 {% endblock %}
