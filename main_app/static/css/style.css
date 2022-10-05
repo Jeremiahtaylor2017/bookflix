@@ -29,6 +29,31 @@
     box-shadow: none;
 }
 
+
+/* ERROR USERNAME FIELD */
+.errorlist + p {
+    position: absolute;
+    left: 50%;
+    top: 12rem;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+/* error username input */
+.errorlist + p > input{
+    width: 100%;
+    height: 3rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: rgb(75 85 99);
+}
+/* errror username input on focus*/
+.errorlist + p > input:focus {
+    border: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+
 /* PASSWORD FIELD */
 .log-form > input + p + p {
     position: absolute;
@@ -53,11 +78,54 @@
 }
 
 
+/* ERROR PASSWORD FIELD */
+.errorlist + p + p {
+    position: absolute;
+    left: 50%;
+    top: 18rem;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+/* error password input */
+.errorlist + p + p > input{
+    width: 100%;
+    height: 3rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: rgb(75 85 99);
+}
+/* error password input on focus*/
+.errorlist + p + p > input:focus{
+    border: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+/* sign in page error message */
+.nonfield > li {
+    position: absolute;
+    bottom: 16rem;
+    text-align: center;
+    color: rgb(255, 21, 21);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+
 
 /* SIGNUP ONLY ----- */
 
 /* PASSWORD CONFIRMATION FIELD */
 .log-form > input + p + p + ul + p + p {
+    position: absolute;
+    left: 50%;
+    top: 23rem;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+/* error password conrirmation field */
+.log-form > input + p + p + ul + p + ul + p {
     position: absolute;
     left: 50%;
     top: 23rem;
@@ -87,7 +155,18 @@
     width: 75%;
 }
 
+/* signup page error messages */
+.errorlist {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: .8rem;
+    color: red;
+    font-weight: 700;
+}
+
+
+
 .helptext {
-    display: none;
+    display: none
 }
 
