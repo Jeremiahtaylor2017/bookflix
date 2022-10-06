@@ -7,10 +7,10 @@ from django.contrib.postgres.fields import ArrayField
 # Create your models here.
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
-    book_list = ArrayField(models.CharField(max_length=50), null=True, blank=True)
+    album_list = ArrayField(models.CharField(max_length=500), default=list)
 
     def __str__(self):
-        return f'{self.user}\'s Book List: {self.book_list}'
+        return f'{self.user}\'s Album List: {self.album_list}'
 
 """
 The functions below are the automatically create/update the Profile model
@@ -26,13 +26,13 @@ def save_user_profile(sender, instance, **kwargs):
     instance.profile.save()
 
 
-# class Book(models.Model):
-#     title = models.CharField(max_length=50)
-#     author = models.CharField(max_length=50)
-#     publish_date = models.DateField('publish date')
-#     pages = models.IntegerField()
-#     genre = models.CharField(max_length=50)
-#     description = models.TextField(max_length=500)
+class Album(models.Model):
+    title = models.CharField(max_length=50)
+    artist = models.CharField(max_length=50)
+    publish_date = models.DateField('publish date')
+    genre = models.CharField(max_length=50)
+    summary = models.TextField(max_length=500)
+    track_list = ArrayField(models.CharField(max_length=50), null=True, blank=True)
 
-#     profile = models.ManyToManyField(Profile)
+    profile = models.ManyToManyField(Profile)
 
