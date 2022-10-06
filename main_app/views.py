@@ -4,6 +4,8 @@ from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 
+from .forms import CreateUserForm
+
 # Create your views here.
 class Home(TemplateView):
     template_name = 'main_app/home.html'
@@ -11,7 +13,8 @@ class Home(TemplateView):
 class Signup(CreateView):
     template_name = 'registration/signup.html'
     success_url = reverse_lazy('home')
-    form_class = UserCreationForm
+    # form_class = UserCreationForm
+    form_class = CreateUserForm
 
     def form_valid(self, form):
         user = form.save()
