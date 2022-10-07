@@ -6,5 +6,14 @@
 {% comment %} Below is just for testing. Can be removed later. {% endcomment %}
 {% if user.is_authenticated %}
     <h3>Hi, {{ user.username }}</h3>
+
+    {% for key, value in data.items %}
+        <p>{{ key }} {{ value }}</p>
+    {% endfor %}
+  
+    
 {% endif %}
+
+
+
 {% endblock %}
