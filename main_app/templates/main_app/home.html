@@ -7,13 +7,25 @@
 {% if user.is_authenticated %}
     <h3>Hi, {{ user.username }}</h3>
 
-    {% for key, value in data.items %}
-        <p>{{ key }} {{ value }}</p>
-    {% endfor %}
-  
+    <img src="{{ key.image }} {{ value.image }}" alt="" height="400px" width="400px">
+    <p>{{ key.image }} {{ value.summary }}</p>
+    <p>{{ key }} {{ value }}</p>
+    {% endif %}
     
-{% endif %}
+    
+    {% for key, value in data.items %}
+    {% if value == 'image' %}
+    {% for item in value %}
+    {{ forloop.counter0 }}, {{ item }}
+    {% endfor %}
+    {% endif %}
+        
+    <p> {{ key }} {{ value }} </p>
 
+
+    {% endfor %}
+
+  
 
 
 {% endblock %}
