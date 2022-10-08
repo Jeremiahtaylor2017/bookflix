@@ -27,11 +27,10 @@ class ShowBook(TemplateView):
     template_name = 'main_app/home.html'
 
     def get(self, request):
-        URL = 'https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=36de190ae228eb292cedfc1fd10c5f38&artist=Cher&album=Believe&format=json'
+        URL = 'http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=36de190ae228eb292cedfc1fd10c5f38&artist=Drake&album=Thank%20Me%20Later&format=json'
         response = requests.get(URL)
         data = response.json()
-        return render(request, self.template_name, {'data': data['album']})
-
+        return render(request, self.template_name, {'data': data})
 
 
 
