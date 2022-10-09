@@ -11,6 +11,12 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 import os
+import environ
+env = environ.Env()
+environ.Env.read_env()
+
+API_KEY = env('API_KEY')
+
 
 from pathlib import Path
 

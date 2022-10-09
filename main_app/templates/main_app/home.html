@@ -16,11 +16,11 @@
     {% for key, value in data.items %}
     {% if value == 'image' %}
     {% for item in value %}
-    {{ forloop.counter0 }}, {{ item }}
+    {{ forloop.counter0 }}, {{ image }}
     {% endfor %}
     {% endif %}
         
-    <p> {{ key }} {{ value }} </p>
+    <p> {{ key }}  </p>
 
 
     {% endfor %}
