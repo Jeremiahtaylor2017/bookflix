@@ -8,7 +8,7 @@
     <h3>Hi, {{ user.username }}</h3>
 
     
-    <p>{{ key.image }} {{ value.album }}</p>
+   
     
     {% endif %}
     
@@ -21,7 +21,7 @@
     {% endfor %}
 
     {% for key, value in data.items%}
-    <p>{{ key }} {{ value}}</p>
+    <p>{{ key }} : {{ value.name }}</p>
     {% endfor %}
 
 
