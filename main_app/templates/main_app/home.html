@@ -6,5 +6,26 @@
 {% comment %} Below is just for testing. Can be removed later. {% endcomment %}
 {% if user.is_authenticated %}
     <h3>Hi, {{ user.username }}</h3>
-{% endif %}
+
+    <img src="{{ key.image }} {{ value.image }}" alt="" height="400px" width="400px">
+    <p>{{ key.image }} {{ value.summary }}</p>
+    <p>{{ key }} {{ value }}</p>
+    {% endif %}
+    
+    
+    {% for key, value in data.items %}
+    {% if value == 'image' %}
+    {% for item in value %}
+    {{ forloop.counter0 }}, {{ image }}
+    {% endfor %}
+    {% endif %}
+        
+    <p> {{ key }}  </p>
+
+
+    {% endfor %}
+
+  
+
+
 {% endblock %}
