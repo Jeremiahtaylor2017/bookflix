@@ -7,24 +7,26 @@
 {% if user.is_authenticated %}
     <h3>Hi, {{ user.username }}</h3>
 
-    <img src="{{ key.image }} {{ value.image }}" alt="" height="400px" width="400px">
-    <p>{{ key.image }} {{ value.summary }}</p>
-    <p>{{ key }} {{ value }}</p>
+    
+   
+    
     {% endif %}
     
     
-    {% for key, value in data.items %}
-    {% if value == 'image' %}
-    {% for item in value %}
-    {{ forloop.counter0 }}, {{ image }}
-    {% endfor %}
+    
+    {%for key, value in data.album.image.3.items%}
+    {% if key == '#text' %}
+    <img src="{{value}}" alt="" height="400px" width="400px">
     {% endif %}
-        
-    <p> {{ key }}  </p>
-
-
     {% endfor %}
 
+    {% for key, value in data.items%}
+    <p>{{ key }} : {{ value.name }}</p>
+    {% endfor %}
+
+
+
+  
   
 
 
