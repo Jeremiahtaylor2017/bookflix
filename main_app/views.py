@@ -38,5 +38,14 @@ class ShowBook(TemplateView):
         data = response.json()
         return render(request, self.template_name, {'data': data})
 
+class ShowAlbumDetails(TemplateView):
+    template_name = 'main_app/details.html'
+
+    def get(self, request):
+        URL = f"http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key={env('API_KEY')}&artist=Drake&album=Thank%20Me%20Later&format=json"
+        response = requests.get(URL)
+        data = response.json()
+        return render(request, self.template_name, {'data': data})
+
 
 
