@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for key, value in data.items%}
+
+    <p> {{ value.artist }}</p>
+
+    <p>{{ key |capfirst }} : {{ value.name }}</p>
+
+    {%for key, value in data.album.image.3.items%}
+    {% if key == '#text' %}
+    <img src="{{value}}" alt="" height="400px" width="400px">
+    {% endif %}
+    {% endfor %}
+
+    {% for key, value in data.album.tracks.name.items%}
+    
+    <p> {{ value }}</p>
+    
+    {% endfor %}
+
+    {%for key, value in data.album.wiki.items%}
+    {% if key == 'content' %}
+    <p> {{ value |safe  }}</p>
+    {% endif %}
+    {% endfor %}
+
+    
+
+{% endfor %}
+
+{% endblock %}
