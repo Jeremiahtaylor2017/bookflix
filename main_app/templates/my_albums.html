@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header class="fixed top-0 w-full z-20 flex justify-between p-5 bg-gradient-to-b 
+from-black to-[rgb(20,20,20)] text-red-600">
+    <a href="{% url 'index' %}" class="font-bold text-xl">
+        THE RECORD SLEEVE
+    </a>
+    <div>
+        <h2 class="user relative font-bold">username</h2>
+        <div style="display:none" class="fixed right-4 top-[4.3rem] dropdown absolute 
+        bg-black/75 w-26 rounded-md p-2" >
+            <a href="{% url 'logout' %}">Logout</a>
+            <p>Delete Account</p>
+        </div>
+    </div>
+</header>
+
+<h1 class="text-xl text-white pl-10 pb-5 font-bold fixed w-full z-10 bg-[rgb(20,20,20)] top-16">
+    My Albums
+</h1>
+
+<main class="bg-[rgb(20,20,20)] min-h-screen h-full mt-24 text-white">
+    {% for img in data %}
+    <div class="relative border-b border-[255,255,255,.25] mx-10 flex p-5 min-h-56">
+        <img src="{{ img }}" alt=""
+        class="max-h-full h-44 mr-4">
+        <div class="grid grid-rows-[2rem_auto_2rem]">
+            <h2 class="text-xl font-semibold">
+                Title
+            </h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate 
+                facere esse odio expedita, iusto veritatis soluta praesentium ipsam possimus? 
+                Sunt perferendis porro illo similique excepturi ad repellat ipsum harum.
+            </p>
+            <p class="self-end">
+                Artist, Release Year
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</main>
+
+<footer class="grid grid-rows-[3rem_1fr_3rem] items-center gap-1 bottom-0 
+bg-[rgb(20,20,20)] text-gray-400 w-full p-10">
+    <p>Contact us: 1-800-555-3245</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 pb-3 gap-3 ">
+        <p>FAQ</p>
+        <p>help Center</p>
+        <p>Terms of Service</p>
+        <p>Privacy</p>
+        <p>Cookie Prefrences</p>
+        <p>Corporate Information</p>
+    </div>
+    <p class="relative bg-black border border-gray-400 w-24 p-2">
+        English 
+        <span class="absolute right-3 top-0.5 text-xl">
+            ⌄
+        </span>
+    </p>
+</footer>
+
+
+<script>
+    const dropdown = document.querySelector(".dropdown")
+    const user = document.querySelector(".user")
+    const drop = () => {
+        if(dropdown.style.display === "none"){
+            dropdown.style.display = "block"
+        } else {
+            dropdown.style.display = "none"
+        }
+    }
+
+    user.addEventListener("click", drop)
+</script>
+{% endblock %}
