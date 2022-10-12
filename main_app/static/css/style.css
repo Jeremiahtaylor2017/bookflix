@@ -171,7 +171,11 @@
 }
 
 
-.index-album-list::-webkit-scrollbar {
+.index-my-albums-list::-webkit-scrollbar {
+    display: none;
+}
+
+.index-modal::-webkit-scrollbar {
     display: none;
 }
 
