@@ -14,15 +14,32 @@
     {% endif %}
     {% endfor %}
 
-    {% for key, value in data.album.tracks.name.items%}
-    
-    <p> {{ value }}</p>
-    
+    {%for key, value in data.album.wiki.items%}
+    {% if key == 'published' %}
+    <p> Published: {{ value |safe  }}</p>
+    {% endif %}
     {% endfor %}
+
+    {%for key, value in data.album.tags.items %}
+    {%for name in value %}
+    {% if forloop.counter0 == 1%} 
+    <p>Genre: {{name.name}} </p> 
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    
+    {%for key, value in data.album.tracks.items %}
+    <ol>
+        {%for name in value %}
+        <li>{{name.name}}</li>
+        {% endfor %}
+    </ol>
+    {% endfor %}
+    
 
     {%for key, value in data.album.wiki.items%}
     {% if key == 'content' %}
-    <p> {{ value |safe  }}</p>
+    <p>Summary <br> {{ value |safe  }}</p>
     {% endif %}
     {% endfor %}
 
