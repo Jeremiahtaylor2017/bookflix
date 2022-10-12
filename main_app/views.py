@@ -48,4 +48,28 @@ class ShowAlbumDetails(TemplateView):
         return render(request, self.template_name, {'data': data})
 
 
+class Index(TemplateView):
+    template_name = 'index.html'
+
+    def get(self, request):
+        data = ( 
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
+        )
+        return render(request, self.template_name, {'data': data})
+
+
 
