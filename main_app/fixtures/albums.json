@@ -6,7 +6,7 @@
             "title": "Sour",
             "artist": "Olivia Rodrigo",
             "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/6df6b11f6011ecd81f3752cadfc5c107.jpg",
-            "publish_date": "2021-01-01",
+            "publish_date": "2021-06-06",
             "genre": "pop",
             "summary": "Sour (stylized in all caps) is the debut studio album by American singer Olivia Rodrigo, released through Geffen and Interscope Records on May 21, 2021. The album was preceded by three singles, Rodrigo's debut single \"Drivers License\", which reached number one in various countries, including the US Billboard Hot 100, and its follow-up top ten single \"Deja Vu\" and the third Single \"Good 4 U\". <a href=\"https://www.last.fm/music/Olivia+Rodrigo/SOUR\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
             "track_list": [
@@ -31,7 +31,7 @@
             "title": "30",
             "artist": "Adele",
             "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/930b68990dc476b27caf9edd92aa904c.png",
-            "publish_date": "2021-01-01",
+            "publish_date": "2021-11-11",
             "genre": "pop",
             "summary": "30 is the fourth studio album by Adele, released on November 19, 2021. The album is Adele's first project since her contract with XL Recordings expired after the release of 25 (2015). The album's title alludes to the age the singer first married ex-husband Simon Konecki, and the album features themes of separation, divorce, motherhood, and the anxiety of fame. The album was supported by its lead single \"Easy on Me\", Adele's first solo release in over five years. <a href=\"https://www.last.fm/music/Adele/30\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
             "track_list": [
@@ -57,7 +57,7 @@
             "title": "Vice Versa",
             "artist": "Rauw Alejandro",
             "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/48e2aa75085404fcb6ae547bfc56ee63.jpg",
-            "publish_date": "2021-01-01",
+            "publish_date": "2022-02-02",
             "genre": "reggaeton",
             "summary": "Vice Versa is the second studio album by Puerto Rican singer Rauw Alejandro, released on June 25, 2021, through Sony Music Latin and Duars Entertainment. The album features production Mr. Naisgai, Tainy, Albert Hype, Caleb Calloway, Orteez, Alvarito, Kenobi, Charlie Handsome, Eydren con el Ritmo, Manu Lara, Phantom and Alejandro himself, alongside collaborations with Mr. Naisgai, Tainy, Lyanno, Caleb Calloway and Anitta. <a href=\"https://www.last.fm/music/Rauw+Alejandro/VICE+VERSA\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
             "track_list": [
@@ -85,7 +85,7 @@
             "title": "Call Me If You Get Lost",
             "artist": "Tyler, the Creator",
             "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/43ba855b2db53301f9c0d6b131d751c4.jpg",
-            "publish_date": "2021-01-01",
+            "publish_date": "2022-05-05",
             "genre": "hip hop",
             "summary": "\"CALL ME IF YOU GET LOST\" is the sixth studio album by American rapper, singer, songwriter and producer Tyler, The Creator. The album was released on June 25, 2021, through A Boy Is a Gun and Columbia Records. The track LUMBERJACK was released as a single on June 16, and WUSYANAME (feat. Youngboy Never Broke Again & Ty Dolla $ign) was teased via music video on June 22. The tracks RISE! (feat. DAISY WORLD), MOMMA TALK, SIR BAUDELAIRE (feat. DJ Drama), and various other unnamed samples were also teased through voicemail, where fans could dial the phone number \"+1 (855) 444-8888\" and hear snippets of the songs in the days leading up to the release of the album. <a href=\"https://www.last.fm/music/Tyler,+the+Creator/CALL+ME+IF+YOU+GET+LOST\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
             "track_list": [
@@ -115,8 +115,8 @@
             "title": "Home Video",
             "artist": "Lucy Dacus",
             "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/5b9691b690e9b0fef297d7e5eee8ac6d.jpg",
-            "publish_date": "2021-01-01",
-            "genre": "indie rock",
+            "publish_date": "2021-06-06",
+            "genre": "rock",
             "summary": "Home Video is the third studio album by American singer-songwriter Lucy Dacus. It was released on June 25, 2021, via Matador. It was promoted by the singles \"Thumbs\", \"Hot & Heavy\", \"VBS\", and \"Brando\".\n\nIn late February 2021, certain fans of Dacus received a VHS tape of a new song in the mail. On March 9, 2021, the song was released using the title \"Thumbs\". It had long been a staple of Dacus' live performances prior to its release. Dacus explained the way the song came about in a press release. <a href=\"https://www.last.fm/music/Lucy+Dacus/Home+Video\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
             "track_list": [
                 "Hot & Heavy",
@@ -130,6 +130,144 @@
                 "Brando",
                 "Please Stay",
                 "Triple Dog Dare"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 6,
+        "fields": {
+            "title": "Montero",
+            "artist": "Lil Nas X",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/ee83cf60fac36924e4c769515774ef8c.jpg",
+            "publish_date": "2022-10-10",
+            "genre": "hip hop",
+            "summary": "MONTERO is the debut studio album by American rapper and singer Lil Nas X, released on September 17, 2021, by Columbia Records. It was supported by the singles \"MONTERO (Call Me by Your Name)\", \"SUN GOES DOWN\", \"INDUSTRY BABY (feat. Jack Harlow)\", and \"THATS WHAT I WANT\", the first and third of which topped the US Billboard Hot 100 while the latter reached the top 10.\n\nThe album has been mostly described as a pop rap record by critics. Primarily rooted in hip-hop and pop, the hook-dominated album incorporates trap beats and distorted hard rock, and draws elements from 2000s R&B and stadium ballads. It features guest appearances from Jack Harlow, Doja Cat, Elton John, Megan Thee Stallion, and Miley Cyrus.\n\nUpon release, MONTERO received acclaim from music critics, who often commended its bold and heartfelt subject matter, and the eclectic production. At Metacritic, which assigns a normalized rating out of 100 to reviews from professional publications, the album received an average score of 85 based on 19 reviews, indicating \"universal acclaim\".\n\nAt the 64th Annual Grammy Awards, the album and its singles received a total of four nominations, including Album of the Year, Nas' second consecutive nomination in the category. The singer performed \"DEAD RIGHT NOW\" at the ceremony. <a href=\"https://www.last.fm/music/Lil+Nas+X/MONTERO\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "MONTERO (Call Me by Your Name)",
+                "DEAD RIGHT NOW",
+                "INDUSTRY BABY",
+                "THATS WHAT I WANT",
+                "THE ART OF REALIZATION",
+                "SCOOP (feat. Doja Cat)",
+                "ONE OF ME (feat. Elton John)",
+                "LOST IN THE CITADEL",
+                "DOLLA SIGN SLIME (feat. Megan Thee Stallion)",
+                "TALES OF DOMINICA",
+                "SUN GOES DOWN",
+                "VOID",
+                "DONT WANT IT",
+                "LIFE AFTER SALEM",
+                "AM I DREAMING (feat. Miley Cyrus)"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 7,
+        "fields": {
+            "title": "Heaux Tales",
+            "artist": "Jazmine Sullivan",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/7f5fdb6f5f483a1bc30e667c2ce0c04f.jpg",
+            "publish_date": "2021-01-01",
+            "genre": "r&b",
+            "summary": "Heaux Tales is an extended play by Jazmine Sullivan, released on January 8, 2021. It includes features from H.E.R., Anderson .Paak, and Ari Lennox. <a href=\"https://www.last.fm/music/Jazmine+Sullivan/Heaux+Tales\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Bodies - Intro",
+                "Antoinette's Tale",
+                "Pick Up Your Feelings",
+                "Ari's Tale",
+                "Put It Down",
+                "On It",
+                "Donna's Tale",
+                "Price Tags",
+                "Rashida's Tale",
+                "Lost One",
+                "Precious' Tale",
+                "The Other Side",
+                "Amanda's Tale",
+                "Girl Like Me"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 8,
+        "fields": {
+            "title": "Glow On",
+            "artist": "Turnstile",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/9bbf56b7df22d8044b0102c3ef12183a.jpg",
+            "publish_date": "2022-09-09",
+            "genre": "rock",
+            "summary": "\"GLOW ON\" is the third studio album by the American punk rock band Turnstile, released on August 27, 2021, via Roadrunner Records. The album was recorded in summer 2020 at Phantom Studios in Gallatin, Tennessee. It was recorded by American producer Mike Elizondo, and marks as the band's first release to include a featured artist with a guest appearance from British singer/songwriter and producer Blood Orange.  It is the band's last album to feature founding guitarist Brady Ebert, who departed from the band in August 2022.\n\n\"GLOW ON\" received universal critical acclaim and was named the best album of 2021 by Spin and the Pittsburgh Post-Gazette. <a href=\"https://www.last.fm/music/Turnstile/GLOW+ON\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "MYSTERY",
+                "BLACKOUT",
+                "DON'T PLAY",
+                "UNDERWATER BOI",
+                "HOLIDAY",
+                "HUMANOID / SHAKE IT UP",
+                "ENDLESS",
+                "FLY AGAIN",
+                "ALIEN LOVE CALL",
+                "WILD WRLD",
+                "DANCE-OFF",
+                "NEW HEART DESIGN",
+                "T.L.C. (TURNSTILE LOVE CONNECTION)",
+                "NO SURPRISE",
+                "LONELY DEZIRES"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 9,
+        "fields": {
+            "title": "El Madrileño",
+            "artist": "C. Tangana",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/936ae5d0465fdf7e78e1d505497f6194.png",
+            "publish_date": "2021-02-26",
+            "genre": "funk",
+            "summary": "El Madrileño",
+            "track_list": [
+                "Demasiadas Mujeres",
+                "Tú Me Dejaste de Querer",
+                "Comerte Entera",
+                "Nunca Estoy",
+                "Párteme La Cara",
+                "Ingobernable",
+                "Nominao",
+                "Un Veneno (G-Mix)",
+                "Te Olvidaste",
+                "Muriendo De Envidia",
+                "CAMBIA!",
+                "Cuándo Olvidaré",
+                "Los Tontos",
+                "Hong Kong"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 10,
+        "fields": {
+            "title": "Jubilee",
+            "artist": "Japanese Breakfast",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/5d93403fbc951b7d31fa80ff826b5180.jpg",
+            "publish_date": "2022-05-05",
+            "genre": "pop",
+            "summary": "Jubilee is the third studio album by American indie project Japanese Breakfast. It was released on June 4, 2021, through Dead Oceans.\n\nZauner has described the album as being about joy. This is in contrast to her previous two albums, Psychopomp and Soft Sounds from Another Planet, both of which had prevalent themes of grief surrounding her mother's death from pancreatic cancer in 2014.\n\nZauner took music theory lessons and studied piano in preparation for Jubilee. She noted \"I was just able to incorporate more interesting chord changes and write more on piano for the first time\".\n\nSupported by the singles “Be Sweet”, “Posing In Bondage”, “Savage Good Boy” & “Paprika” the album released on June 4th 2021 to critical acclaim. It went on to earn a nomination for “Best Alternative Music Album” at the 64th Grammy Awards and appeared on multiple year end lists for best album of 2021. <a href=\"https://www.last.fm/music/Japanese+Breakfast/Jubilee\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Paprika",
+                "Be Sweet",
+                "Kokomo, IN",
+                "Slide Tackle",
+                "Posing in Bondage",
+                "Sit",
+                "Savage Good Boy",
+                "In Hell",
+                "Tactics",
+                "Posing For Cars"
             ]
         }
     }
