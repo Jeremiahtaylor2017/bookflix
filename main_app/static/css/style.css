@@ -170,3 +170,8 @@
     display: none
 }
 
+
+.index-album-list::-webkit-scrollbar {
+    display: none;
+}
+
