@@ -5,12 +5,25 @@ from django.contrib.auth.models import User
 from django.contrib.postgres.fields import ArrayField
 
 # Create your models here.
-class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
-    album_list = ArrayField(models.CharField(max_length=500), default=list)
+class Album(models.Model):
+    title = models.CharField(max_length=50)
+    artist = models.CharField(max_length=50)
+    publish_date = models.DateField('publish date')
+    genre = models.CharField(max_length=50)
+    summary = models.TextField(max_length=500)
+    track_list = ArrayField(models.CharField(max_length=50), null=True, blank=True)
 
     def __str__(self):
-        return f'{self.user}\'s Album List: {self.album_list}'
+        return f'{self.title} by {self.artist}'
+
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
+
+    albums = models.ManyToManyField(Album)
+
+    def __str__(self):
+        return f'{self.user}\'s albums'
 
 """
 The functions below are the automatically create/update the Profile model
@@ -26,13 +39,7 @@ def save_user_profile(sender, instance, **kwargs):
     instance.profile.save()
 
 
-class Album(models.Model):
-    title = models.CharField(max_length=50)
-    artist = models.CharField(max_length=50)
-    publish_date = models.DateField('publish date')
-    genre = models.CharField(max_length=50)
-    summary = models.TextField(max_length=500)
-    track_list = ArrayField(models.CharField(max_length=50), null=True, blank=True)
 
-    profile = models.ManyToManyField(Profile)
+
+    
 
