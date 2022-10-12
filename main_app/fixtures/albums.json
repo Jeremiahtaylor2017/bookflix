@@ -1,0 +1,136 @@
+[
+    {
+        "model": "main_app.album",
+        "pk": 1,
+        "fields": {
+            "title": "Sour",
+            "artist": "Olivia Rodrigo",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/6df6b11f6011ecd81f3752cadfc5c107.jpg",
+            "publish_date": "2021-01-01",
+            "genre": "pop",
+            "summary": "Sour (stylized in all caps) is the debut studio album by American singer Olivia Rodrigo, released through Geffen and Interscope Records on May 21, 2021. The album was preceded by three singles, Rodrigo's debut single \"Drivers License\", which reached number one in various countries, including the US Billboard Hot 100, and its follow-up top ten single \"Deja Vu\" and the third Single \"Good 4 U\". <a href=\"https://www.last.fm/music/Olivia+Rodrigo/SOUR\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Brutal",
+                "Traitor",
+                "Drivers License",
+                "1 Step Forward, 3 Steps back",
+                "Deja Vu",
+                "Good 4 U",
+                "Enough For You",
+                "Happier",
+                "Jealousy, Jealousy",
+                "Favorite Crime",
+                "Hope Ur Ok"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 2,
+        "fields": {
+            "title": "30",
+            "artist": "Adele",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/930b68990dc476b27caf9edd92aa904c.png",
+            "publish_date": "2021-01-01",
+            "genre": "pop",
+            "summary": "30 is the fourth studio album by Adele, released on November 19, 2021. The album is Adele's first project since her contract with XL Recordings expired after the release of 25 (2015). The album's title alludes to the age the singer first married ex-husband Simon Konecki, and the album features themes of separation, divorce, motherhood, and the anxiety of fame. The album was supported by its lead single \"Easy on Me\", Adele's first solo release in over five years. <a href=\"https://www.last.fm/music/Adele/30\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Strangers by Nature",
+                "Easy on Me",
+                "My Little Love",
+                "Cry Your Heart Out",
+                "Oh My God",
+                "Can I Get It",
+                "I Drink Wine",
+                "All Night Parking (with Erroll Garner) Interlude",
+                "Woman Like Me",
+                "Hold On",
+                "To Be Loved",
+                "Love Is a Game"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 3,
+        "fields": {
+            "title": "Vice Versa",
+            "artist": "Rauw Alejandro",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/48e2aa75085404fcb6ae547bfc56ee63.jpg",
+            "publish_date": "2021-01-01",
+            "genre": "reggaeton",
+            "summary": "Vice Versa is the second studio album by Puerto Rican singer Rauw Alejandro, released on June 25, 2021, through Sony Music Latin and Duars Entertainment. The album features production Mr. Naisgai, Tainy, Albert Hype, Caleb Calloway, Orteez, Alvarito, Kenobi, Charlie Handsome, Eydren con el Ritmo, Manu Lara, Phantom and Alejandro himself, alongside collaborations with Mr. Naisgai, Tainy, Lyanno, Caleb Calloway and Anitta. <a href=\"https://www.last.fm/music/Rauw+Alejandro/VICE+VERSA\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Todo De Ti",
+                "Sexo Virtual",
+                "Nubes",
+                "Track 4",
+                "2/Catorce",
+                "Aquel Nap ZzZz",
+                "Cúrame",
+                "Cosa Guapa",
+                "Desenfocao'",
+                "¿Cuándo Fue?",
+                "La Old Skull",
+                "¿Y Eso?",
+                "Tengo un Pal",
+                "Brazilera"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 4,
+        "fields": {
+            "title": "Call Me If You Get Lost",
+            "artist": "Tyler, the Creator",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/43ba855b2db53301f9c0d6b131d751c4.jpg",
+            "publish_date": "2021-01-01",
+            "genre": "hip hop",
+            "summary": "\"CALL ME IF YOU GET LOST\" is the sixth studio album by American rapper, singer, songwriter and producer Tyler, The Creator. The album was released on June 25, 2021, through A Boy Is a Gun and Columbia Records. The track LUMBERJACK was released as a single on June 16, and WUSYANAME (feat. Youngboy Never Broke Again & Ty Dolla $ign) was teased via music video on June 22. The tracks RISE! (feat. DAISY WORLD), MOMMA TALK, SIR BAUDELAIRE (feat. DJ Drama), and various other unnamed samples were also teased through voicemail, where fans could dial the phone number \"+1 (855) 444-8888\" and hear snippets of the songs in the days leading up to the release of the album. <a href=\"https://www.last.fm/music/Tyler,+the+Creator/CALL+ME+IF+YOU+GET+LOST\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "SIR BAUDELAIRE",
+                "CORSO",
+                "LEMONHEAD",
+                "WUSYANAME",
+                "LUMBERJACK",
+                "HOT WIND BLOWS",
+                "MASSA",
+                "RUNITUP",
+                "MANIFESTO",
+                "SWEET / I THOUGHT YOU WANTED TO DANCE",
+                "MOMMA TALK",
+                "RISE!",
+                "BLESSED",
+                "JUGGERNAUT",
+                "WILSHIRE",
+                "SAFARI"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 5,
+        "fields": {
+            "title": "Home Video",
+            "artist": "Lucy Dacus",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/5b9691b690e9b0fef297d7e5eee8ac6d.jpg",
+            "publish_date": "2021-01-01",
+            "genre": "indie rock",
+            "summary": "Home Video is the third studio album by American singer-songwriter Lucy Dacus. It was released on June 25, 2021, via Matador. It was promoted by the singles \"Thumbs\", \"Hot & Heavy\", \"VBS\", and \"Brando\".\n\nIn late February 2021, certain fans of Dacus received a VHS tape of a new song in the mail. On March 9, 2021, the song was released using the title \"Thumbs\". It had long been a staple of Dacus' live performances prior to its release. Dacus explained the way the song came about in a press release. <a href=\"https://www.last.fm/music/Lucy+Dacus/Home+Video\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Hot & Heavy",
+                "Christine",
+                "First Time",
+                "VBS",
+                "Cartwheel",
+                "Thumbs",
+                "Going Going Gone",
+                "Partner In Crime",
+                "Brando",
+                "Please Stay",
+                "Triple Dog Dare"
+            ]
+        }
+    }
+]
