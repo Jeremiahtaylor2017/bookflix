@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header 
+class="fixed top-0 w-full z-10 flex justify-between p-5 bg-gradient-to-b 
+from-black to-[rgb(20,20,20)] text-red-600">
+    <a href="{% url 'index' %}" class="font-bold text-xl">
+        THE RECORD SLEEVE
+    </a>
+    <div>
+        <h2 
+        class="user relative font-bold hover:bg-[rgba(0,0,0,.5)] px-5 py-1 rounded-lg">
+        {{user.username}}
+        </h2>
+        <div style="display:none" 
+        class="fixed right-4 top-[4.3rem] dropdown absolute bg-black/75 
+        w-26 rounded-md p-2 text-right" >
+        <p><a href="{% url 'index' %}">Home</a></p>
+            <p><a href="{% url 'my_albums' %}">My Albums</a></p>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+    </div>
+</header>
+
+<Main class="bg-[rgb(20,20,20)] min-h-screen h-full text-white">
+    <div class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+        <div class="relative">
+            <p class="absolute bottom-3 left-4 text-lg z-10">
+                {{ object }}
+            </p>
+            <div class="absolute bottom-0 w-full h-20 bg-gradient-to-t from-black 
+            to-[rgba(0,0,0,0)] rounded-b-xl">
+            </div>
+            <div class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 h-full 
+            w-full bg-[rgba(0,0,0,.35)] rounded-xl">
+            </div>
+            <p class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-red-600 
+            font-black -rotate-45 text-8xl tracking-widest">
+                DELETE
+            </p>
+            <img src="https://lastfm.freetls.fastly.net/i/u/174s/6df6b11f6011ecd81f3752cadfc5c107.jpg" 
+            alt="{{object}} cover art" 
+            class="min-w-[25rem] md:min-w-[35rem] rounded-xl">
+        </div>
+        <form action="" method="POST"
+        class="absolute text-center -bottom-14 w-full">
+            {% csrf_token %}
+            <input type="submit" value="Confirm"
+            class="px-10 font-bold text-2xl hover:text-red-600 border-r">
+            <a href="{% url 'my_albums' %}" 
+            class="px-8 font-bold text-2xl hover:text-red-600">
+                Cancel
+            </a>
+        </form>
+    </div> 
+</Main>
+
+<footer class="grid grid-rows-[3rem_1fr_3rem] items-center gap-1 bottom-0 
+bg-[rgb(20,20,20)] text-gray-400 w-full p-10">
+    <p>Contact us: 1-800-555-3245</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 pb-3 gap-3 ">
+        <p>FAQ</p>
+        <p>help Center</p>
+        <p>Terms of Service</p>
+        <p>Privacy</p>
+        <p>Cookie Prefrences</p>
+        <p>Corporate Information</p>
+    </div>
+    <p class="relative bg-black border border-gray-400 w-24 p-2">
+        English 
+        <span class="absolute right-3 top-0.5 text-xl">
+            ⌄
+        </span>
+    </p>
+</footer>
+
+
+<script>
+    // USER DROPDOWN MENU
+    const dropdown = document.querySelector(".dropdown")
+    const user = document.querySelector(".user")
+    const drop = () => {
+        if(dropdown.style.display === "none"){
+            dropdown.style.display = "block"
+        } else {
+            dropdown.style.display = "none"
+        }
+    }
+    
+    user.addEventListener("click", drop)
+</script>
+{% endblock %}
