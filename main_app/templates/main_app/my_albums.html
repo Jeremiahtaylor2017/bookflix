@@ -7,10 +7,11 @@ from-black to-[rgb(20,20,20)] text-red-600">
         THE RECORD SLEEVE
     </a>
     <div>
-        <h2 class="user relative font-bold">username</h2>
+        <h2 class="user relative font-bold">{{user.username}}</h2>
         <div style="display:none" class="fixed right-4 top-[4.3rem] dropdown absolute 
-        bg-black/75 w-26 rounded-md p-2" >
-            <a href="{% url 'logout' %}">Logout</a>
+        bg-black/75 w-26 rounded-md p-2 text-right">
+            <p><a href="{% url 'index' %}">Home</a></p>
+            <p><a href="{% url 'logout' %}">Logout</a></p>
             <p>Delete Account</p>
         </div>
     </div>
@@ -21,21 +22,19 @@ from-black to-[rgb(20,20,20)] text-red-600">
 </h1>
 
 <main class="bg-[rgb(20,20,20)] min-h-screen h-full mt-24 text-white">
-    {% for img in data %}
-    <div class="relative border-b border-[255,255,255,.25] mx-10 flex p-5 min-h-56">
-        <img src="{{ img }}" alt=""
-        class="max-h-full h-44 mr-4">
-        <div class="grid grid-rows-[2rem_auto_2rem]">
-            <h2 class="text-xl font-semibold">
-                Title
+    {% for album in data %}
+    <div class="relative border-b border-[255,255,255,.25] mx-10 flex flex-col md:flex-row p-5 min-h-56">
+        <img src="{{ album.fields.photo_url }}" alt=""
+        class="self-center my-3 md:self-start h-full h-44 mr-4">
+        <div class="grid grid-rows-[3rem_auto_2rem]">
+            <h2 class="text-2xl font-semibold">
+                {{ album.fields.title }}
             </h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate 
-                facere esse odio expedita, iusto veritatis soluta praesentium ipsam possimus? 
-                Sunt perferendis porro illo similique excepturi ad repellat ipsum harum.
+                {{ album.fields.summary |safe }}
             </p>
             <p class="self-end">
-                Artist, Release Year
+                <span class="font-semibold">{{ album.fields.artist }}</span>, {{ album.fields.publish_date }}
             </p>
         </div>
     </div>

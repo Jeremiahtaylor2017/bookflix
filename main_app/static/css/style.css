@@ -1,5 +1,5 @@
 .log-background {
-    background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80");
+    background-image: url("https://images.unsplash.com/photo-1542208998-f6dbbb27a72f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVjb3JkJTIwc2hvcHxlbnwwfHwwfHw%3D&w=1000&q=80");
 }
 
 
@@ -172,6 +172,27 @@
 
 
 .index-my-albums-list::-webkit-scrollbar {
+    display: none;
+}
+.pop-albums-list::-webkit-scrollbar {
+    display: none;
+}
+.hip-hop-albums-list::-webkit-scrollbar {
+    display: none;
+}
+.rock-albums-list::-webkit-scrollbar {
+    display: none;
+}
+.funk-albums-list::-webkit-scrollbar {
+    display: none;
+}
+.rb-albums-list::-webkit-scrollbar {
+    display: none;
+}
+.country-albums-list::-webkit-scrollbar {
+    display: none;
+}
+.reggaeton-albums-list::-webkit-scrollbar {
     display: none;
 }
 

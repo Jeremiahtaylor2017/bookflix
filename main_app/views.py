@@ -52,7 +52,14 @@ class ShowAlbumDetails(TemplateView):
 
 
 class Index(TemplateView):
-    template_name = 'index.html'
+    template_name = 'main_app/index.html'
+
+    def get(self, request):
+        data = serializers.serialize("python",Album.objects.all()) 
+        return render(request, self.template_name, {'data': data})
+
+class MyAlbums(TemplateView):
+    template_name = 'main_app/my_albums.html'
 
     def get(self, request):
         data = serializers.serialize("python",Album.objects.all()) 

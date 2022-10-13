@@ -1,0 +1,584 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header 
+class="fixed top-0 w-full z-10 flex justify-between p-5 bg-gradient-to-b 
+from-black to-[rgb(20,20,20)] text-red-600">
+    <a href="{% url 'index' %}" class="font-bold text-xl">
+        THE RECORD SLEEVE
+    </a>
+    <div>
+        <h2 
+        class="user relative font-bold hover:bg-[rgba(0,0,0,.5)] px-5 py-1 rounded-lg">
+        {{user.username}}
+        </h2>
+        <div style="display:none" 
+        class="fixed right-4 top-[4.3rem] dropdown absolute bg-black/75 
+        w-26 rounded-md p-2 text-right" >
+            <p><a href="{% url 'my_albums' %}">My Albums</a></p>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+    </div>
+</header>
+
+<main class="main bg-[rgb(20,20,20)] min-h-screen h-full mt-16">
+    <!-- My ALBUMS -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            My Albums
+        </h1>
+        <button 
+        class="my-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="my-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="index-my-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- POP -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            Pop
+        </h1>
+        <button 
+        class="pop-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="pop-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="pop-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+            {% if album.fields.genre == 'pop' %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- HIP HOP -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            Hip Hop
+        </h1>
+        <button 
+        class="hip-hop-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="hip-hop-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="hip-hop-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+            {% if album.fields.genre == 'hip hop' %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- ROCK -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            Rock
+        </h1>
+        <button 
+        class="rock-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="rock-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="rock-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+            {% if album.fields.genre == 'rock' %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- FUNK -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            Funk
+        </h1>
+        <button 
+        class="funk-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="funk-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="funk-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+            {% if album.fields.genre == 'funk' %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- R&B -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            R&B
+        </h1>
+        <button 
+        class="rb-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="rb-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="rb-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+            {% if album.fields.genre == 'r&b' %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- COUNTRY -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            Country
+        </h1>
+        <button 
+        class="country-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="country-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="country-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+            {% if album.fields.genre == 'country' %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- REGGAETON -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            Reggaeton
+        </h1>
+        <button 
+        class="reggaeton-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="reggaeton-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="reggaeton-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+            {% if album.fields.genre == 'reggaeton' %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    
+
+    <!-- MODAL -->
+    <div style="display: none;" 
+    class="index-modal-bg fixed bg-[rgba(0,0,0,.5)] -translate-y-1/2 -translate-x-1/2 left-1/2 top-1/2 
+    w-screen h-screen z-20">
+    </div>
+    <div style="display: none" 
+    class="index-modal fixed flex items-center flex-col left-1/2 top-1/2 -translate-y-1/2 
+    -translate-x-1/2 z-30 text-white h-screen w-full overflow-auto bg-[rgb(20,20,20,0)] 
+    md:w-[50rem] md:py-10">
+        <div class="relative w-full">
+            <span 
+            class="modal-exit absolute flex right-5 top-5 border bg-[rgb(20,20,20)] w-10 h-10 
+            rounded-3xl text-xl justify-center items-center cursor-pointer z-40">
+                <p>X</p> 
+            </span>
+            <img class="modal-img w-full h-full rounded-t-xl pointer-events-none" src="" alt="">
+            <div 
+            class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-[rgb(20,20,20)] 
+            to-[rgba(20,20,20,0)] flex flex-col justify-center px-5">
+                <p class="modal-title text-4xl font-bold md:text-6xl"></p>
+                <p class="modal-artist pt-1"></p>
+            </div>
+        </div>
+        <div class="bg-[rgb(20,20,20)] rounded-b-xl w-full">
+            <div class="grid grid-cols-2 justify-items-center w-full py-5">
+                <p class="border-b">Release Date</p>
+                <p class="border-b">Genre</p>
+                <p class="modal-date"></p>
+                <p class="modal-genre"></p>
+            </div>
+            <p class="modal-summary px-5 text-center"></p>
+            <p class="text-2xl font-semibold pl-5 pt-16 mb-4 border-b">Tracks</p>
+            <div class="modal-track-list grid grid-cols-2 justify-items-center w-full pb-10 text-lg">
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="grid grid-rows-[3rem_1fr_3rem] items-center gap-1 bottom-0 
+bg-[rgb(20,20,20)] text-gray-400 w-full p-10">
+    <p>Contact us: 1-800-555-3245</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 pb-3 gap-3 ">
+        <p>FAQ</p>
+        <p>help Center</p>
+        <p>Terms of Service</p>
+        <p>Privacy</p>
+        <p>Cookie Prefrences</p>
+        <p>Corporate Information</p>
+    </div>
+    <p class="relative bg-black border border-gray-400 w-24 p-2">
+        English 
+        <span class="absolute right-3 top-0.5 text-xl">
+            ⌄
+        </span>
+    </p>
+</footer>
+
+
+<script>
+    // USER DROPDOWN MENU
+    const dropdown = document.querySelector(".dropdown")
+    const user = document.querySelector(".user")
+    const drop = () => {
+        if(dropdown.style.display === "none"){
+            dropdown.style.display = "block"
+        } else {
+            dropdown.style.display = "none"
+        }
+    }
+    
+    user.addEventListener("click", drop)
+
+    
+    // ALBUM LIST SCROLL FUNCTIONALITY
+    // my albums
+    const myAlbumsRightButton = document.querySelector(".my-albums-right")
+    const myAlbumsLeftButton = document.querySelector(".my-albums-left")
+    const myAlbumsList = document.querySelector(".index-my-albums-list")
+
+    const moveMyAlbumsRight = () => {
+        myAlbumsList.scrollLeft += 815
+    }
+    const moveMyAlbumsLeft = () => {
+        myAlbumsList.scrollLeft -= 815
+    }
+
+    myAlbumsRightButton.addEventListener("click", moveMyAlbumsRight)
+    myAlbumsLeftButton.addEventListener("click", moveMyAlbumsLeft)
+
+    // pop albums
+    const popAlbumsRightButton = document.querySelector(".pop-albums-right")
+    const popAlbumsLeftButton = document.querySelector(".pop-albums-left")
+    const popAlbumsList = document.querySelector(".pop-albums-list")
+
+    const movePopAlbumsRight = () => {
+        popAlbumsList.scrollLeft += 815
+    }
+    const movePopAlbumsLeft = () => {
+        popAlbumsList.scrollLeft -= 815
+    }
+
+    popAlbumsRightButton.addEventListener("click", movePopAlbumsRight)
+    popAlbumsLeftButton.addEventListener("click", movePopAlbumsLeft)
+
+    // hip hop albums
+    const hipHopAlbumsRightButton = document.querySelector(".hip-hop-albums-right")
+    const hipHopAlbumsLeftButton = document.querySelector(".hip-hop-albums-left")
+    const hipHopAlbumsList = document.querySelector(".hip-hop-albums-list")
+
+    const moveHipHopAlbumsRight = () => {
+        hipHopAlbumsList.scrollLeft += 815
+    }
+    const moveHipHopAlbumsLeft = () => {
+        hipHopAlbumsList.scrollLeft -= 815
+    }
+
+    hipHopAlbumsRightButton.addEventListener("click", moveHipHopAlbumsRight)
+    hipHopAlbumsLeftButton.addEventListener("click", moveHipHopAlbumsLeft)
+
+    // rock albums
+    const rockAlbumsRightButton = document.querySelector(".rock-albums-right")
+    const rockAlbumsLeftButton = document.querySelector(".rock-albums-left")
+    const rockAlbumsList = document.querySelector(".rock-albums-list")
+
+    const moveRockAlbumsRight = () => {
+        rockAlbumsList.scrollLeft += 815
+    }
+    const moveRockAlbumsLeft = () => {
+        rockAlbumsList.scrollLeft -= 815
+    }
+
+    rockAlbumsRightButton.addEventListener("click", moveRockAlbumsRight)
+    rockAlbumsLeftButton.addEventListener("click", moveRockAlbumsLeft)
+
+    // funk albums
+    const funkAlbumsRightButton = document.querySelector(".funk-albums-right")
+    const funkAlbumsLeftButton = document.querySelector(".funk-albums-left")
+    const funkAlbumsList = document.querySelector(".funk-albums-list")
+
+    const moveFunkAlbumsRight = () => {
+        funkAlbumsList.scrollLeft += 815
+    }
+    const moveFunkAlbumsLeft = () => {
+        funkAlbumsList.scrollLeft -= 815
+    }
+
+    funkAlbumsRightButton.addEventListener("click", moveFunkAlbumsRight)
+    funkAlbumsLeftButton.addEventListener("click", moveFunkAlbumsLeft)
+
+    // r&b albums
+    const rbAlbumsRightButton = document.querySelector(".rb-albums-right")
+    const rbAlbumsLeftButton = document.querySelector(".rb-albums-left")
+    const rbAlbumsList = document.querySelector(".rb-albums-list")
+
+    const moveRbAlbumsRight = () => {
+        rbAlbumsList.scrollLeft += 815
+    }
+    const moveRbAlbumsLeft = () => {
+        rbAlbumsList.scrollLeft -= 815
+    }
+
+    rbAlbumsRightButton.addEventListener("click", moveRbAlbumsRight)
+    rbAlbumsLeftButton.addEventListener("click", moveRbAlbumsLeft)
+
+    // country albums
+    const countryAlbumsRightButton = document.querySelector(".country-albums-right")
+    const countryAlbumsLeftButton = document.querySelector(".country-albums-left")
+    const countryAlbumsList = document.querySelector(".country-albums-list")
+
+    const moveCountryAlbumsRight = () => {
+        countryAlbumsList.scrollLeft += 815
+    }
+    const moveCountryAlbumsLeft = () => {
+        countryAlbumsList.scrollLeft -= 815
+    }
+
+    countryAlbumsRightButton.addEventListener("click", moveCountryAlbumsRight)
+    countryAlbumsLeftButton.addEventListener("click", moveCountryAlbumsLeft)
+
+    // reggaeton albums
+    const reggaetonAlbumsRightButton = document.querySelector(".reggaeton-albums-right")
+    const reggaetonAlbumsLeftButton = document.querySelector(".reggaeton-albums-left")
+    const reggaetonAlbumsList = document.querySelector(".reggaeton-albums-list")
+
+    const moveReggaetonAlbumsRight = () => {
+        reggaetonAlbumsList.scrollLeft += 815
+    }
+    const moveReggaetonAlbumsLeft = () => {
+        reggaetonAlbumsList.scrollLeft -= 815
+    }
+
+    reggaetonAlbumsRightButton.addEventListener("click", moveReggaetonAlbumsRight)
+    reggaetonAlbumsLeftButton.addEventListener("click", moveReggaetonAlbumsLeft)
+    
+
+    // MODAL
+    const modalImg = document.querySelector(".modal-img")
+    const modalTitle = document.querySelector(".modal-title")
+    const modalArtist = document.querySelector(".modal-artist")
+    const modalDate = document.querySelector(".modal-date")
+    const modalGenre = document.querySelector(".modal-genre")
+    const modalSummary = document.querySelector(".modal-summary")
+    const modalTrackList = document.querySelector(".modal-track-list")
+    const modalExit = document.querySelector(".modal-exit")
+    const main = document.querySelector(".main")
+    const modal = document.querySelector(".index-modal")
+    const modalBackground = document.querySelector(".index-modal-bg")
+
+    main.addEventListener("click" , e => {
+        if(e.target.src === undefined){
+            return
+        } else {
+            modalBackground.style.display = "block"
+            modal.style.display = "flex"
+            modalImg.src = e.target.src
+            modalTitle.innerText = e.target.parentElement.children[2].innerText
+            modalArtist.innerText = e.target.parentElement.children[3].innerText
+            modalDate.innerText = e.target.parentElement.children[4].innerText
+            modalGenre.innerText = e.target.parentElement.children[5].innerText
+            modalSummary.innerText = e.target.parentElement.children[6].innerText
+            modalTrackList.innerHTML = ""
+            const trackListString = e.target.parentElement.children[7].innerText
+            const trackListStringWithoutBrackets = trackListString.slice(1, -1)
+            const trackListStringWithoutQuotes = trackListStringWithoutBrackets.replaceAll('"', "")
+            const trackListStringSplitByCommas = trackListStringWithoutQuotes.split(",")
+            trackListStringSplitByCommas.forEach(track => {
+                const trackWithoutFirstSpace = track.substring(1)
+                const para = document.createElement("p")
+                para.innerText = trackWithoutFirstSpace
+                modalTrackList.appendChild(para)
+            })
+        }  
+    })
+
+    modalExit.addEventListener("click", () => {
+        modal.style.display = "none"
+        modalBackground.style.display = "none"
+    })
+</script>
+{% endblock %}
