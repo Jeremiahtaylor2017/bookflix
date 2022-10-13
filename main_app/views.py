@@ -4,6 +4,9 @@ from django.views.generic import TemplateView, CreateView
 from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.core import serializers
+from .models import Album
+
 import requests
 
 import environ
@@ -45,6 +48,14 @@ class ShowAlbumDetails(TemplateView):
         URL = f"http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key={env('API_KEY')}&artist=Drake&album=Thank%20Me%20Later&format=json"
         response = requests.get(URL)
         data = response.json()
+        return render(request, self.template_name, {'data': data})
+
+
+class Index(TemplateView):
+    template_name = 'index.html'
+
+    def get(self, request):
+        data = serializers.serialize("python",Album.objects.all()) 
         return render(request, self.template_name, {'data': data})
 
 
