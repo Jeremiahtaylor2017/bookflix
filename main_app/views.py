@@ -18,6 +18,9 @@ from .forms import CreateUserForm
 class Home(TemplateView):
     template_name = 'main_app/home.html'
 
+    def get(self, request):
+        return redirect("accounts/login/")
+
 class Signup(CreateView):
     template_name = 'registration/signup.html'
     success_url = reverse_lazy('home')
