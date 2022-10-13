@@ -4,6 +4,9 @@ from django.views.generic import TemplateView, CreateView
 from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.core import serializers
+from .models import Album
+
 import requests
 
 import environ
@@ -52,23 +55,7 @@ class Index(TemplateView):
     template_name = 'index.html'
 
     def get(self, request):
-        data = ( 
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-            "https://www.theglobeandmail.com/resizer/-2nub-HIMMjzvLyBK6qWJfgztyg=/600x0/filters:quality(80):format(jpeg)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/3YV2PTJAVFGCVJK5IC6RJYY6EA",
-        )
+        data = serializers.serialize("python",Album.objects.all()) 
         return render(request, self.template_name, {'data': data})
 
 
