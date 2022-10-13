@@ -6,7 +6,6 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.core import serializers
 from .models import Album
-
 import requests
 
 import environ
@@ -55,14 +54,15 @@ class Index(TemplateView):
     template_name = 'main_app/index.html'
 
     def get(self, request):
+        user_data = serializers.serialize("python", Album.objects.filter(profile=request.user.profile))
         data = serializers.serialize("python",Album.objects.all()) 
-        return render(request, self.template_name, {'data': data})
+        return render(request, self.template_name, {'data': data, 'user_data': user_data})
 
 class MyAlbums(TemplateView):
     template_name = 'main_app/my_albums.html'
 
     def get(self, request):
-        data = serializers.serialize("python",Album.objects.all()) 
+        data = serializers.serialize("python", Album.objects.filter(profile=request.user.profile))
         return render(request, self.template_name, {'data': data})
 
 

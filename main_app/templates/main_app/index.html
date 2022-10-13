@@ -41,7 +41,7 @@ from-black to-[rgb(20,20,20)] text-red-600">
             ◀ 
         </button>
         <div class="index-my-albums-list w-full overflow-x-scroll flex scroll-smooth">
-            {% for album in data %}
+            {% for album in user_data %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
                     <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
