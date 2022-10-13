@@ -228,7 +228,7 @@
             "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/936ae5d0465fdf7e78e1d505497f6194.png",
             "publish_date": "2021-02-26",
             "genre": "funk",
-            "summary": "El Madrileño",
+            "summary": "El Madrileño by C. Tangana",
             "track_list": [
                 "Demasiadas Mujeres",
                 "Tú Me Dejaste de Querer",
@@ -268,6 +268,268 @@
                 "In Hell",
                 "Tactics",
                 "Posing For Cars"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 11,
+        "fields": {
+            "title": "Whole Lotta Red",
+            "artist": "Playboi Carti",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/4342b5aeb287903fe00d5b1ebf1df64e.gif",
+            "publish_date": "2022-03-03",
+            "genre": "hip hop",
+            "summary": "Whole Lotta Red is the sophomore studio album by Playboi Carti. The project aims to prove Carti’s skill in music:\n\n\"I’m ready. I’m more ready than y'all. I’m trying to prove to these folks that I can rap. I got bars. That’s what Whole Lotta Red is about.\"\n\nThe album title was discovered on August 18, 2018, when a recording of Carti surfaced, in which he was conversing about the project. The title refers to Carti’s affiliation with the Bloods, as well as his affinity for Wockhardt’s red codeine-promethazine syrup, commonly known as lean.\n\nIn a Spring 2019 GQ story published on March 4, Carti named fashion designer and art director Virgil Abloh as the creative director of the album.\n\nIn The FADER’s Summer 2019 cover story featuring Carti that was published on June 12, it was revealed that some tracks recorded during production of the album had guest appearances from Trippie Redd and Gunna, with production from Pi'erre Bourne, Maaly Raw, Richie Souf, Roark Bailey, and Don Cannon.\n\nDuring his performance at The Rave / Eagles Club on July 28, 2019, Carti announced that he was trying to release the album within the following sixty days with no guest appearances:\n\n\"I’m trying to drop that shit in the next 60 days. I ain’t gon' lie, it feel like we worked too hard for this moment so I'ma do this shit with no features.\"\n\nIn an interview with Culture Kings released on January 15, 2020, Carti updated the planned release date to 2020.\n\n“@ MEH” was released as a single for the album on April 16, 2020.\n\nOn November 23, 2020, Carti shared on Instagram that the album had been turned in to his label.\n\nOn December 11, 2020, DJ Akademiks said during a live stream that Kanye West and Matthew Williams were executive producers of the album. Moreover, he shared that the album would drop on Christmas Day, which was later confirmed by some of Carti’s associates on December 14, 2020. Red graffiti tags subsequently surfaced around the United States with the album release date.\n\nOn December 21, 2020, Carti revealed the cover artwork and official Christmas Day release date through social media. <a href=\"https://www.last.fm/music/Playboi+Carti/Whole+Lotta+Red\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Rockstar Made",
+                "Go2DaMoon",
+                "Stop Breathing",
+                "Beno!",
+                "JumpOutTheHouse",
+                "M3tamorphosis",
+                "Slay3r",
+                "No Sl33p",
+                "New Tank",
+                "Teen X",
+                "Meh",
+                "Vamp Anthem",
+                "New N3on",
+                "Control",
+                "Punk Monk",
+                "On That Time",
+                "King Vamp",
+                "Place",
+                "Sky",
+                "Over",
+                "ILoveUIHateU",
+                "Die4Guy",
+                "Not PLaying",
+                "F33l Lik3 Dyin"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 12,
+        "fields": {
+            "title": "To Hell With It",
+            "artist": "PinkPantheress",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/1440d7072979bd299043a6593e07840e.png",
+            "publish_date": "2022-02-02",
+            "genre": "pop",
+            "summary": "To Hell with It (stylized in all lowercase) is the debut mixtape by English singer-songwriter and producer PinkPantheress. It was released on October 15, 2021 through Parlophone Records. The mixtape contains the successful singles \"Pain\", \"Break It Off\", \"Passion\" and \"Just for Me\". <a href=\"https://www.last.fm/music/PinkPantheress/to+hell+with+it\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Pain",
+                "I must apologise",
+                "Last valentines",
+                "Passion",
+                "Just for me",
+                "Noticed I cried",
+                "Reason",
+                "All my friends know",
+                "Nineteen",
+                "Break It Off"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 13,
+        "fields": {
+            "title": "Reckless",
+            "artist": "Morgan Wade",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/b82b0e696b9757728b930203a75737b3.jpg",
+            "publish_date": "2021-03-19",
+            "genre": "country",
+            "summary": "Reckless by Morgan Wade",
+            "track_list": [
+                "Wilder Days",
+                "Matches and Metaphors",
+                "Other Side",
+                "Don't Cry",
+                "Mend",
+                "Last Cigarette",
+                "Take Me Away",
+                "Reckless",
+                "Northern Air",
+                "Met You"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 14,
+        "fields": {
+            "title": "Hall of Fame",
+            "artist": "Polo G",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/a7bbbfe19f47e109542f06c5550fcdf6.jpg",
+            "publish_date": "2021-06-06",
+            "genre": "hip hop",
+            "summary": "Hall of Fame is Chicago rapper Polo G's third studio album, released June 11th 2021. The album's title was first teased in a lyric from Polo’s unreleased collaboration with Scorey, “Pillow Talk,” where he references his two preceding studio albums, June 2019’s Die a Legend and May 2020’s THE GOAT:\n\n\"Future Hall of Fame, then he the GOAT, yeah, he gon' die a legend\"\n\nJust over month after announcing the album via Instagram live, Polo released what is assumed to be the project’s lead single, “Epidemic,” in September 2020. The track was followed months later by “GNF (OKOKOK)” in February 2021 and the long-awaited “RAPSTAR” in April.\n\nIn early March 2021, Polo reposted an Instagram story speculating the album’s impending release after adding the initials “HOF” to his bio, seemingly accrediting the speculation. The project is expected to drop in the coming months following the release of Polo’s collaboration with Lil Durk and The Kid LAROI. <a href=\"https://www.last.fm/music/Polo+G/Hall+of+Fame\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Painting Pictures",
+                "RAPSTAR",
+                "No Return",
+                "Toxic",
+                "Epidemic",
+                "GANG GANG",
+                "Boom",
+                "Black Hearted",
+                "Broken Guitars",
+                "GNF (OKOKOK)",
+                "Go Part 1",
+                "Heart of a Giant",
+                "Zooted Freestyle",
+                "Party Lyfe",
+                "Losses",
+                "So Real",
+                "Fame & Riches",
+                "For the Love of New York",
+                "Clueless",
+                "Bloody Canvas"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 15,
+        "fields": {
+            "title": "Happier Than Ever",
+            "artist": "Billie Eilish",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/0f0bd3c40aaf60b9900d74fb70b6ad09.jpg",
+            "publish_date": "2022-06-06",
+            "genre": "pop",
+            "summary": "Happier Than Ever is the second studio album by American singer Billie Eilish. It was released on July 30, 2021, by Darkroom and Interscope. Eilish wrote the album with her frequent collaborator, her brother FINNEAS, who produced the album himself. Eilish cited self-reflection during the COVID-19 pandemic as the biggest inspiration for the album.\n\nPrimarily a downtempo pop record, Happier Than Ever is characterized by sparse, jazz-influenced, electropop arrangements set to meditative tempos, departing from the upbeat, trap-led sound of Eilish's debut album, WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? (2019). Consisting of torch songs about the downsides of stardom, Happier Than Ever draws heavily from Eilish's rise to fame and the drawbacks that come with it. Upon release, the album received acclaim from music critics, who praised its stylistic, restrained production, and insightful lyrics. At the 64th Annual Grammy Awards, the album and its title track received a total of seven nominations, including Album of the Year, Best Pop Vocal Album, Song of the Year and Record of the Year.\n\nSeven singles were released in promotion of the album: \"My Future\", \"Therefore I Am\", \"Your Power\", \"Lost Cause\", \"NDA\", the title track, and \"Male Fantasy\"; the first three peaked within the top 10 of the US Billboard Hot 100. \"Therefore I Am\" was the highest-charting song from the album, peaking at number two, followed by \"My Future\" at number six, and \"Your Power\" at number 10. Happier Than Ever debuted atop the Billboard 200, becoming Eilish's second number-one album in the United States, and topping the album charts in 27 other countries. A Disney+ documentary concert film, Happier Than Ever: A Love Letter to Los Angeles, was released on September 3, 2021 and received a nomination for Best Music Film at the 2022 Grammys. To promote the album further, Eilish embarked on her fifth concert tour, titled Happier Than Ever, The World Tour, set to cover Europe, Oceania and North America in 2022.\n\nUpon release, Happier Than Ever received acclaim from music critics, who admired its resolute portrayal of teenage stardom contrasting its muted sound. At Metacritic, which assigns a normalized rating out of 100 to reviews from publications, the album has a weighted mean score of 86 based on 27 reviews, indicating \"universal acclaim\". <a href=\"https://www.last.fm/music/Billie+Eilish/Happier+Than+Ever\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Getting Older",
+                "I Didn't Change My Number",
+                "Billie Bossa Nova",
+                "my future",
+                "Oxytocin",
+                "GOLDWING",
+                "Lost Cause",
+                "Halley's Comet",
+                "Not My Responsibility",
+                "OverHeated",
+                "Everybody Dies",
+                "Your Power",
+                "NDA",
+                "Therefore I Am",
+                "Happier Than Ever",
+                "Male Fantasy"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 16,
+        "fields": {
+            "title": "Hey What",
+            "artist": "Low",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/0b305c6f897c39de5c45fc08b5064679.jpg",
+            "publish_date": "2021-09-09",
+            "genre": "rock",
+            "summary": "HEY WHAT (stylized in all caps) is the 13th full-length album by Minnesota-based duo Low, released on September 10, 2021, through Sub Pop. It is their third recording produced by BJ Burton, who has worked with bands and musicians like Bon Iver, Charli XCX and Lizzo <a href=\"https://www.last.fm/music/Low/HEY+WHAT\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Not Available"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 17,
+        "fields": {
+            "title": "If Orange Was a Place",
+            "artist": "Tems",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/4922988d9a0c79fa47d1ea780adda10d.jpg",
+            "publish_date": "2021-10-10",
+            "genre": "r&b",
+            "summary": "If Orange Was a Place is the second (and first major label) extended play by Nigerian singer, songwriter and producer Tems. It was produced primarily by GuiltyBeatz, along with production from Jonah Christian, and was released on 15 September 2021 by Since '93 and RCA. It features a single guest appearance from American singer Brent Faiyaz. <a href=\"https://www.last.fm/music/Tems/If+Orange+Was+A+Place\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Crazy Tings",
+                "Found",
+                "Replay",
+                "Avoid Things",
+                "Vibe Out"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 18,
+        "fields": {
+            "title": "If I Can't Have Love, I Want Power",
+            "artist": "Halsey",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/8d894f3237d3b8b03c34e316a052298a.jpg",
+            "publish_date": "2022-02-02",
+            "genre": "rock",
+            "summary": "\"If I Can't Have Love, I Want Power\" is the fourth studio album by American singer Halsey. It was released on August 27, 2021, via Capitol Records. The album's production were handed by the industrial rock duo Nine Inch Nails. She described the project as \"a concept album about the joys and horrors of pregnancy and childbirth\".\n\nThe cover artwork of the album was inspired by artistic depictions of Mary, mother of Jesus. A theatrical film directed by American filmmaker Colin Tilley, titled after the album and featuring its music, screened in select IMAX cinemas around the world on August 25 and 26, 2021, leading up to the album release. Its tickets went for sale on August 3, 2021. <a href=\"https://www.last.fm/music/Halsey/If+I+Can%E2%80%99t+Have+Love,+I+Want+Power\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "The Tradition",
+                "Bells in Santa Fe",
+                "Easier than Lying",
+                "Lilith",
+                "Girl Is a Gun",
+                "You asked for this",
+                "Darling",
+                "1121",
+                "honey",
+                "Whispers",
+                "I Am Not a Woman, I'm a God",
+                "The Lighthouse",
+                "Ya'aburnee"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 19,
+        "fields": {
+            "title": "Collapsed in Sunbeams",
+            "artist": "Arlo Parks",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/64502ded79e928c57b7b49c36492144f.jpg",
+            "publish_date": "2021-07-07",
+            "genre": "pop",
+            "summary": "Collapsed in Sunbeams is the debut studio album by British singer-songwriter Arlo Parks, released via Transgressive Records on 29 January 2021. The album received widespread acclaim, with many music critics praising Parks' versatility and vulnerability. <a href=\"https://www.last.fm/music/Arlo+Parks/Collapsed+in+Sunbeams\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Collapsed In Sunbeams",
+                "Hurt",
+                "Too Good",
+                "Hope",
+                "Caroline",
+                "Black Dog",
+                "Green Eyes",
+                "Just Go",
+                "For Violet",
+                "Eugene",
+                "Bluish",
+                "Portra 400"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 20,
+        "fields": {
+            "title": "Gold-Diggers Sound",
+            "artist": "Leon Bridges",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/54d9042399cd0867700ef89cad02d644.jpg",
+            "publish_date": "2021-08-08",
+            "genre": "r&b",
+            "summary": "Gold-Diggers Sound is the third studio album by Leon Bridges. It was released on July 23, 2021, by Columbia Records. The album features guest appearances from Robert Glasper, Terrace Martin, and Atia \"Ink\" Boggs. <a href=\"https://www.last.fm/music/Leon+Bridges/Gold-Diggers+Sound\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Born Again",
+                "Motorbike",
+                "Steam",
+                "Why Don't You Touch Me",
+                "Magnolias",
+                "Gold-Diggers (Junior's Fanfare)",
+                "Details",
+                "Sho Nuff",
+                "Sweeter",
+                "Don't Worry",
+                "Blue Mesas"
             ]
         }
     }
