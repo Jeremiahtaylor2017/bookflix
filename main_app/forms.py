@@ -3,6 +3,9 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
 import requests
+import environ
+env = environ.Env()
+environ.Env.read_env()
 
 class CreateUserForm(UserCreationForm):
     class Meta:
@@ -17,7 +20,7 @@ class AlbumSearch(forms.Form):
     def get_album(self):
         artist = self.cleaned_data.get('artist')
         album = self.cleaned_data.get('album')
-        URL = f"http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=36de190ae228eb292cedfc1fd10c5f38&artist={artist}&album={album}&format=json"
+        URL = f"http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key={env('API_KEY')}&artist={artist}&album={album}&format=json"
         response = requests.get(URL)
         data = response.json()
         return data
