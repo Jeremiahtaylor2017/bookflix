@@ -27,7 +27,7 @@ class Home(TemplateView):
         else:
             form = AlbumSearch()
 
-        return render(request, 'main_app/details.html', {'form': form, 'data': data})
+        return render(request, self.template_name, {'form': form, 'data': data})
 
 
 class Signup(CreateView):
