@@ -1,7 +1,7 @@
 from os import environ
 
 from django.shortcuts import redirect, render
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, DeleteView
 from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.core import serializers
@@ -59,4 +59,9 @@ class MyAlbums(TemplateView):
     def get(self, request):
         data = serializers.serialize("python", Album.objects.filter(profile=request.user.profile))
         return render(request, self.template_name, {'data': data})
+
+
+class DeleteAlbum(DeleteView):
+    model = Album
+    success_url = '/my_albums/'
 
