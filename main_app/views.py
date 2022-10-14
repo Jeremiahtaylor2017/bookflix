@@ -1,6 +1,6 @@
 from os import environ
 from django.shortcuts import redirect, render
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, DeleteView
 from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
@@ -17,6 +17,9 @@ from .forms import CreateUserForm
 # Create your views here.
 class Home(TemplateView):
     template_name = 'main_app/home.html'
+
+    def get(self, request):
+        return redirect("accounts/login/")
 
 class Signup(CreateView):
     template_name = 'registration/signup.html'
@@ -64,6 +67,10 @@ class MyAlbums(TemplateView):
     def get(self, request):
         data = serializers.serialize("python", Album.objects.filter(profile=request.user.profile))
         return render(request, self.template_name, {'data': data})
+
+class DeleteAlbum(DeleteView):
+    model = Album
+    success_url = '/my_albums/'
 
 
 

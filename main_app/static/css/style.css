@@ -171,6 +171,9 @@
 }
 
 
+.all-albums-list::-webkit-scrollbar {
+    display: none;
+}
 .index-my-albums-list::-webkit-scrollbar {
     display: none;
 }

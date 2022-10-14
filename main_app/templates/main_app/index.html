@@ -23,7 +23,46 @@ from-black to-[rgb(20,20,20)] text-red-600">
 </header>
 
 <main class="main bg-[rgb(20,20,20)] min-h-screen h-full mt-16">
-    <!-- My ALBUMS -->
+    <!-- ALL ALBUMS -->
+    <div class="relative">
+        <h1 class="text-white pl-5 pt-4 font-bold text-lg">
+            All Albums
+        </h1>
+        <button 
+        class="all-albums-right absolute top-[3.7rem] right-0 h-[15.1rem] w-20 z-[4] 
+        text-[rgba(0,0,0,0)] hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,0)] 
+        to-[rgba(0,0,0,.5)] hover:to-[rgba(0,0,0)]">
+            ▶
+        </button>
+        <button 
+        class="all-albums-left absolute top-[3.7rem] h-[15.1rem] w-20 z-[4] text-[rgba(0,0,0,0)] 
+        hover:text-white text-4xl bg-gradient-to-r from-[rgba(0,0,0,.5)] hover:from-[rgba(0,0,0)] 
+        to-[rgba(0,0,0,0)]">
+            ◀ 
+        </button>
+        <div class="all-albums-list w-full overflow-x-scroll flex scroll-smooth">
+            {% for album in data %}
+                <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
+                    <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
+                    from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
+                    <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
+                        {{ album.fields.title }}
+                    </p>
+                    <p class="absolute text-white bottom-3 left-2 pointer-events-none" >
+                        {{ album.fields.artist }}
+                    </p>
+                    <p style="display:none">{{ album.fields.publish_date }}</p>
+                    <p style="display:none">{{ album.fields.genre }}</p>
+                    <p style="display:none">{{ album.fields.summary |safe }}</p>
+                    <p style="display:none">{{ album.fields.track_list |safe }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- MY ALBUMS -->
     <div class="relative">
         <h1 class="text-white pl-5 pt-4 font-bold text-lg">
             My Albums
@@ -43,7 +82,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
         <div class="index-my-albums-list w-full overflow-x-scroll flex scroll-smooth">
             {% for album in user_data %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
-                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
                     from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
                     <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
@@ -82,7 +122,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
             {% for album in data %}
             {% if album.fields.genre == 'pop' %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
-                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
                     from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
                     <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
@@ -122,7 +163,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
             {% for album in data %}
             {% if album.fields.genre == 'hip hop' %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
-                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
                     from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
                     <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
@@ -162,7 +204,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
             {% for album in data %}
             {% if album.fields.genre == 'rock' %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
-                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
                     from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
                     <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
@@ -202,7 +245,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
             {% for album in data %}
             {% if album.fields.genre == 'funk' %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
-                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
                     from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
                     <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
@@ -242,7 +286,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
             {% for album in data %}
             {% if album.fields.genre == 'r&b' %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
-                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
                     from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
                     <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
@@ -282,7 +327,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
             {% for album in data %}
             {% if album.fields.genre == 'country' %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
-                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
                     from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
                     <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
@@ -322,7 +368,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
             {% for album in data %}
             {% if album.fields.genre == 'reggaeton' %}
                 <div class="relative m-4 h-[15rem] min-w-[15rem] snap-always snap-center" >
-                    <img src="{{ album.fields.photo_url }}" alt="" class="rounded-md h-full max-w-[20rem]"/>
+                    <img src="{{ album.fields.photo_url }}" alt="{{ album.fields.title }} by {{ album.fields.artist }} cover art" 
+                    class="rounded-md h-full max-w-[20rem]"/>
                     <div class="absolute bottom-0 w-full h-20 rounded-b-md bg-gradient-to-t 
                     from-black to-[rgba(20,20,20,0)] pointer-events-none"></div>
                     <p class="absolute text-white bottom-8 text-lg font-bold left-2 pointer-events-none" >
@@ -416,6 +463,21 @@ bg-[rgb(20,20,20)] text-gray-400 w-full p-10">
 
     
     // ALBUM LIST SCROLL FUNCTIONALITY
+    // all albums
+    const allAlbumsRightButton = document.querySelector(".all-albums-right")
+    const allAlbumsLeftButton = document.querySelector(".all-albums-left")
+    const allAlbumsList = document.querySelector(".all-albums-list")
+
+    const moveAllAlbumsRight = () => {
+        allAlbumsList.scrollLeft += 815
+    }
+    const moveAllAlbumsLeft = () => {
+        allAlbumsList.scrollLeft -= 815
+    }
+
+    allAlbumsRightButton.addEventListener("click", moveAllAlbumsRight)
+    allAlbumsLeftButton.addEventListener("click", moveAllAlbumsLeft)
+
     // my albums
     const myAlbumsRightButton = document.querySelector(".my-albums-right")
     const myAlbumsLeftButton = document.querySelector(".my-albums-left")
