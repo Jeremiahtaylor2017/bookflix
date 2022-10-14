@@ -22,12 +22,15 @@ from-black to-[rgb(20,20,20)] text-red-600">
     </div>
 </header>
 
+
 <Main class="bg-[rgb(20,20,20)] min-h-screen h-full text-white">
     <div class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
         <div class="relative">
-            <p class="absolute bottom-3 left-4 text-lg z-10">
-                {{ object }}
+            
+            <p class="absolute bottom-3 left-4 text-lg z-10 text-3xl font-bold tracking-wide">  
+               {{ object }}
             </p>
+            
             <div class="absolute bottom-0 w-full h-20 bg-gradient-to-t from-black 
             to-[rgba(0,0,0,0)] rounded-b-xl">
             </div>
@@ -38,7 +41,7 @@ from-black to-[rgb(20,20,20)] text-red-600">
             font-black -rotate-45 text-8xl tracking-widest">
                 DELETE
             </p>
-            <img src="https://lastfm.freetls.fastly.net/i/u/174s/6df6b11f6011ecd81f3752cadfc5c107.jpg" 
+            <img src="{{album_cover}}" 
             alt="{{object}} cover art" 
             class="min-w-[25rem] md:min-w-[35rem] rounded-xl">
         </div>
