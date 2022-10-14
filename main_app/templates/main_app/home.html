@@ -13,6 +13,14 @@
     <input type="submit" value="Search">
 </form>
 
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
 {% if data %}
     {% for key, value in data.items%}
 
@@ -58,31 +66,7 @@
 
 
     {% endfor %}
+
+    
 {% endif %}
-    
-    
-    
-    {% comment %} {%for key, value in data.album.image.3.items%}
-    {% if key == '#text' %}
-    <img src="{{value}}" alt="" height="400px" width="400px">
-    {% endif %}
-    {% endfor %}
-
-    
-    {% for key, value in data.items%}
-
-    
-    <p>{{ key |capfirst }} : {{ value.name }}</p>
-    
-    {% endfor %}
-
-    <a href="{% url 'album_details' %}" style="color: red; font-size: 20px;">View Album Details</a> {% endcomment %}
-    
-
-
-
-  
-  
-
-
 {% endblock %}
