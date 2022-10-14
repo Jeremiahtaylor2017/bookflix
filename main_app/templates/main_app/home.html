@@ -6,15 +6,16 @@
 {% comment %} Below is just for testing. Can be removed later. {% endcomment %}
 {% if user.is_authenticated %}
     <h3>Hi, {{ user.username }}</h3>
+{% endif %}
 
+<form action="" method="get">
+    {{ form.as_p }}
+    <input type="submit" value="Search">
+</form>
     
-   
-    
-    {% endif %}
     
     
-    
-    {%for key, value in data.album.image.3.items%}
+    {% comment %} {%for key, value in data.album.image.3.items%}
     {% if key == '#text' %}
     <img src="{{value}}" alt="" height="400px" width="400px">
     {% endif %}
@@ -28,7 +29,7 @@
     
     {% endfor %}
 
-    <a href="{% url 'album_details' %}" style="color: red; font-size: 20px;">View Album Details</a>
+    <a href="{% url 'album_details' %}" style="color: red; font-size: 20px;">View Album Details</a> {% endcomment %}
     
 
 
