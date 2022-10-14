@@ -78,3 +78,7 @@ class DeleteAlbum(DeleteView):
                 
         return context
     
+
+class CreateAlbum(CreateView):
+    model = Album
+    fields = '__all__'
