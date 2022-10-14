@@ -9,7 +9,7 @@ class Album(models.Model):
     title = models.CharField(max_length=50)
     artist = models.CharField(max_length=50)
     photo_url = models.CharField(max_length=200, default='http://dalelyles.com/musicmp3s/no_cover.jpg')
-    publish_date = models.DateField('publish date')
+    publish_date = models.CharField(max_length=50)
     genre = models.CharField(max_length=50)
     summary = models.TextField(max_length=500)
     track_list = ArrayField(models.CharField(max_length=50), null=True, blank=True)
