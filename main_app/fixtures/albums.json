@@ -532,5 +532,843 @@
                 "Blue Mesas"
             ]
         }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 21,
+        "fields": {
+            "title": "Planet Her",
+            "artist": "Doja Cat",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/d1619e7707eb9f63884cebce1f76b382.jpg",
+            "publish_date": "2022-04-04",
+            "genre": "rap",
+            "summary": "Planet Her is the third studio album by American singer and rapper Doja Cat. It was released on June 25, 2021, by Kemosabe and RCA Records. The album, titled after a fictional planet created by Doja Cat, sees the artist experimenting with sounds that were new and unfamiliar to her, in an attempt to depart from the mainstream trends expected of pop artists. To further explain the name, she likened her musical style's shift in the record to travelling outside of Earth and into outer space. A record that explores and incorporates a wide variety of genres, Planet Her is <a href=\"https://www.last.fm/music/Doja+Cat/Planet+Her\">Read more on Last.fm</a>. Planet Her is the third studio album by American singer and rapper Doja Cat. It was released on June 25, 2021, by Kemosabe and RCA Records. The album, titled after a fictional planet created by Doja Cat, sees the artist experimenting with sounds that were new and unfamiliar to her, in an attempt to depart from the mainstream trends expected of pop artists. To further explain the name, she likened her musical style's shift in the record to travelling outside of Earth and into outer space.\n\nA record that explores and incorporates a wide variety of genres, Planet Her is an amalgamation of pop, R&B and hip hop styles. Lyrically, the album touches on several topics and themes, focusing on femininity, solitude, romance and sexual relationships.\n\nThe album has spawned five singles: \"Kiss Me More (feat. SZA)\", \"You Right\" with The Weeknd, \"Need to Know\", \"Woman\" and \"Get Into It (Yuh)\". The first four songs all charted within the top 15 of both the Billboard Hot 100 and the UK Singles Chart. Planet Her reached number one in New Zealand and spent four non consecutive weeks at number two on the Billboard 200 chart in the United States. Landing inside the top ten in a dozen other countries, it finished 2021 as the tenth best-selling album worldwide. It also broke the record for the biggest opening day for an album by a female rapper on Spotify.\n\nUpon release, Planet Her was met with generally positive reviews from music critics, most of whom praised Doja Cat's musical versatility and her vocal deliveries. The album was nominated for Album of the Year and Best Pop Vocal Album at the 64th Annual Grammy Awards, while \"Need to Know\" was nominated for Best Melodic Rap Performance. The single \"Kiss Me More\" received nominations for Record of the Year, and Song of the Year, and won the award for Best Pop Duo\/Group Performance. <a href=\"https://www.last.fm/music/Doja+Cat/Planet+Her\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Woman",
+                "Naked",
+                "Payday",
+                "Get Into It (Yuh)",
+                "Need to Know",
+                "I Don't Do Drugs",
+                "You Right",
+                "Been Like This",
+                "Options",
+                "Ain't Shit",
+                "Imagine",
+                "Alone"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 22,
+        "fields": {
+            "title": "Second Line",
+            "artist": "Dawn Richard",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/2506f6ebb52edbdc5d40a1a51c199b10.jpg",
+            "publish_date": "2021-03-03",
+            "genre": "rnb",
+            "summary": "Second Line is the sixth studio album by American singer Dawn Richard and her first release since signing to her new label Merge Records. Richard describes the project as “a movement to bring pioneering Black women in electronic music to the forefront.” <a href=\"https://www.last.fm/music/Dawn+Richard/Second+Line\">Read more on Last.fm</a>. Second Line is the sixth studio album by American singer Dawn Richard and her first release since signing to her new label Merge Records. Richard describes the project as “a movement to bring pioneering Black women in electronic music to the forefront.” <a href=\"https://www.last.fm/music/Dawn+Richard/Second+Line\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "King Creole (Intro)",
+                "Nostalgia",
+                "Boomerang",
+                "Bussifame",
+                "Pressure",
+                "Jacuzzi",
+                "FiveOhFour (a lude)",
+                "Voodoo (Intermission)",
+                "Mornin | Streetlights",
+                "Le Petit Morte",
+                "Radio Free",
+                "The Potter",
+                "Perfect Storm",
+                "Voodoo (Outermission)",
+                "SELFish (Outro)"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 23,
+        "fields": {
+            "title": "El Alimento",
+            "artist": "Cimafunk",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/6eeeb1cf31204cb1246681289fa9d861.jpg",
+            "publish_date": "2021-10-08",
+            "genre": "latin",
+            "summary": "Cimafunk’s incandescent sophomore album, El Alimento, unfolds as a series of intersections between Afro-Cuban musical tradition and stateside masters of funk, hip-hop and rock & roll. The elastic bounce of “Funk Aspirin,” with George Clinton, brings a euphoric comparsa aboard the Funkadelic mothership, while a swirling melange of rumba and sticky bass lines provide a rich sonic canvas for veteran rapper Lupe Fiasco’s nimble word play. Loving nods to Afro-Cuban percussion abound on “No Me Alcanza,” performed with Havana legends Los Papines, while the saturated synths of “Estoy Pa’ Eso” wink at Sign O’ the Times-era Prince. Cimafunk’s roots act as a prismatic lens of musical memory, refracting strife and indefatigable Cuban resilience across the album, most emphatically on the resistance anthem",
+            "track_list": [
+                "Funk Aspirin",
+                "NostalgiaRómpelo (feat. Lupe Fiasco)",
+                "Te Quema la Bemba",
+                "Caramelo",
+                "Esto Es Cuba",
+                "La Noche",
+                "Salvaje (feat. Lester Snell",
+                "El Reparto",
+                "Estoy Pa' Eso",
+                "Sal de Lo Malo",
+                "La Era del Sazón",
+                "No Me Alcanza (feat. Los Papines",
+                "Como Te Descargo"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 24,
+        "fields": {
+            "title": "New Long Leg",
+            "artist": "Dry Cleaning",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/725ae1bf1cfe5c6dc088ac193c352ba5.jpg",
+            "publish_date": "2021-04-04",
+            "genre": "post-punk",
+            "summary": "The South London group of Nick Buxton (drums), Tom Dowse (guitar), Lewis Maynard (bass) and Florence Shaw (vocals) released thier debut album New Long Leg on 2nd April. The 10-track long-player, which includes ‘Strong Feelings’ and last year’s single ‘Scratchcard Lanyard’, was recorded over two weeks last summer at Rockfield Studios in rural Wales with producer John Parish (PJ Harvey, Aldous Harding). <a href=\"https://www.last.fm/music/Dry+Cleaning/New+Long+Leg\">Read more on Last.fm</a>. The South London group of Nick Buxton (drums), Tom Dowse (guitar), Lewis Maynard (bass) and Florence Shaw (vocals) released thier debut album New Long Leg on 2nd April.  The 10-track long-player, which includes ‘Strong Feelings’ and last year’s single ‘Scratchcard Lanyard’, was recorded over two weeks last summer at Rockfield Studios in rural Wales with producer John Parish (PJ Harvey, Aldous Harding). <a href=\"https://www.last.fm/music/Dry+Cleaning/New+Long+Leg\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Scratchcard Lanyard",
+                "Unsmart Lady",
+                "Strong Feelings",
+                "Leafy",
+                "Her Hippo",
+                "New Long Leg",
+                "John Wick",
+                "More Big Birds",
+                "A.L.C",
+                "Every Day Carry"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 25,
+        "fields": {
+            "title": "29",
+            "artist": "Carly Pearce",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/521f9781b81c5220f88b547b4e151cf9.jpg",
+            "publish_date": "2021-02-19",
+            "genre": "country",
+            "summary": "Carly Pearce had her 30s all planned out, then her life imploded with a high-profile divorce and the death of a dear collaborator. The Kentucky singer could’ve hidden from the spotlight, but she turned her grief and emotion into the instant-classic EP 29 (and the expanded version 29: Written in Stone), chronicling that transitional age with courage, empathy, and humor. She acidly warns the “Next Girl” about a playboy ex, allows herself to be really “Messy,” and mourns her dashed dreams in the devastating title track. “The year that I got married and divorced/Held on for dear life but still fell off the horse,” Pearce sings with a sigh. Here’s to being OK with not being OK.",
+            "track_list": [
+                "Next Girl",
+                "Should've Known Better",
+                "29",
+                "Liability",
+                "Messy",
+                "Show Me Around",
+                "Day One"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 26,
+        "fields": {
+            "title": "Afrique Victime",
+            "artist": "Mdou Moctar",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/97cdb459500b01fcd2c840f3edec48e0.jpg",
+            "publish_date": "2021-05-21",
+            "genre": "psychedelic rock",
+            "summary": "In some ways, Mdou Moctar’s Afrique Victime sounds both like an inversion of rock & roll and the purest rock record to come out in recent years. The Tuareg singer-guitarist has dispensed with the genre’s structural hallmarks — there’s rarely a backbeat (and, hell, most of the songs aren’t even in your typical 4/4 rhythm) — but he shreds on his guitar more fluidly and passionately than practically any six-string hero to grace the cover of a guitar mag in recent years. When he puts his guitar in the spotlight, as on “Taliat” or his unplugged (and wholly un-Clapton-like) “Layla,” it feels like the rest of the music is following him. And when his voice and guitar work together on the title cut, the effect is truly transcendent.",
+            "track_list": [
+                "Chismiten",
+                "Taliat",
+                "Ya Habibti",
+                "Tala Tannam",
+                "Untitled",
+                "Asdikte Akal",
+                "Layla",
+                "Afrique Victime",
+                "Bismilahi Atagah"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 26,
+        "fields": {
+            "title": "Afrique Victime",
+            "artist": "Mdou Moctar",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/97cdb459500b01fcd2c840f3edec48e0.jpg",
+            "publish_date": "2021-05-21",
+            "genre": "psychedelic rock",
+            "summary": "In some ways, Mdou Moctar’s Afrique Victime sounds both like an inversion of rock & roll and the purest rock record to come out in recent years. The Tuareg singer-guitarist has dispensed with the genre’s structural hallmarks — there’s rarely a backbeat (and, hell, most of the songs aren’t even in your typical 4/4 rhythm) — but he shreds on his guitar more fluidly and passionately than practically any six-string hero to grace the cover of a guitar mag in recent years. When he puts his guitar in the spotlight, as on “Taliat” or his unplugged (and wholly un-Clapton-like) “Layla,” it feels like the rest of the music is following him. And when his voice and guitar work together on the title cut, the effect is truly transcendent.",
+            "track_list": [
+                "Chismiten",
+                "Taliat",
+                "Ya Habibti",
+                "Tala Tannam",
+                "Untitled",
+                "Asdikte Akal",
+                "Layla",
+                "Afrique Victime",
+                "Bismilahi Atagah"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 27,
+        "fields": {
+            "title": "Ignorance",
+            "artist": "The Weather Station",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/33cb0c056e2d7a7fb2d58d2dcd7c7ed5.jpg",
+            "publish_date": "2021-02-02",
+            "genre": "pop",
+            "summary": "Ignorance is the fifth full-length studio album by The Weather Station, released on February 5, 2021. <a href=\"https://www.last.fm/music/The+Weather+Station/Ignorance\">Read more on Last.fm</a>. Ignorance is the fifth full-length studio album by The Weather Station, released on February 5, 2021. <a href=\"https://www.last.fm/music/The+Weather+Station/Ignorance\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Robber",
+                "Atlantic",
+                "Tried To Tell You",
+                "Parking Lot",
+                "Loss",
+                "Separated",
+                "Wear",
+                "Trust",
+                "Heart",
+                "Subdivisions"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 28,
+        "fields": {
+            "title": "Niñxs Rotxs",
+            "artist": "Mabiland",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/e224c9bcf07c7b6737c422741d24aed2.jpg",
+            "publish_date": "2021-07-01",
+            "genre": "hip-hop",
+            "summary": "Mabiland’s second album, Niñxs Rotxs, deepens and enriches the R&B en español that’s continued to claim space in the Latin music industry, and also takes listeners on an emotional journey that blends neo-soul, rap, hip-hop, and R&B. Through her melodious soundscapes built for deep thinking, the Colombian multihyphenate shapes a narrative of a “broken” girl — reflected in the album title, aesthetic, and lyrics — and carefully lays out the internal battles that come with the experience. She strays from commercial pop reggaeton, opting instead for soft undertones of nu-funk, experimental instrumentation, and sequence selections that hold her stories together. Tracks such as “Niñxs Rotxs” are rooted in self-reflection, while “Ashé” and “WOW” act as powerful reclamations of pro-Black protests.",
+            "track_list": [
+                "Prólogo",
+                "DEM (Intro)",
+                "Ashé",
+                "Hey Mami",
+                "NIÑXS ROTXS",
+                "Retrato",
+                "No Fui Capaz",
+                "A La Cara",
+                "Nadie Sabe",
+                "Interludio",
+                "De La Calle",
+                "WOW",
+                "Qué Pasó?"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 29,
+        "fields": {
+            "title": "Punk",
+            "artist": "Young Thug",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/b2b2ec68a8c185f375f82ccc7dcafefd.png",
+            "publish_date": "2021-11-11",
+            "genre": "hip-hop",
+            "summary": "\"Punk\" (Stylized as PUNK) is American rapper Young Thug second studio album. It was released on 15 October 2021 through YSL Records and is distributed by Atlantic Records and 300 Entertainment. The album features packed guest appearances from Strick, J. Cole, T-Shyne, Gunna, Future, BSlime, the late Juice Wrld, Post Malone, ASAP Rocky, Lil Double 0, Drake, Travis Scott, Doja Cat, Nate Ruess, Jeff Bhasker, and the late Mac Miller. Production is handled by a variety of record producers, including T-Minus, Metro Boomin, Kanye West, Pi'erre Bourne, Wheezy, Oz, Louis Bell, and Watt, among others. In an interview about recording <a href=\"https://www.last.fm/music/Young+Thug/PUNK\">Read more on Last.fm</a>.\"Punk\" (Stylized as PUNK) is American rapper Young Thug second studio album. It was released on 15 October 2021 through YSL Records and is distributed by Atlantic Records and 300 Entertainment. The album features packed guest appearances from Strick, J. Cole, T-Shyne, Gunna, Future, BSlime, the late Juice Wrld, Post Malone, ASAP Rocky, Lil Double 0, Drake, Travis Scott, Doja Cat, Nate Ruess, Jeff Bhasker, and the late Mac Miller. Production is handled by a variety of record producers, including T-Minus, Metro Boomin, Kanye West, Pi'erre Bourne, Wheezy, Oz, Louis Bell, and Watt, among others. In an interview about recording his debut studio album, So Much Fun (2019), Young Thug told The Fader that he wanted to release a follow-up album in the \"upcoming weeks\". In contrast to his debut, which he described as a \"lighthearted work\", Punk would be more personal and introspective. He implied that the new album was \"touching\" and interpreted the meaning of Punk as \"brave, not self centered, conscious, very, very neglected, very misunderstood, very patient, very authentic\". He said the album would reflect \"real rap\". On July 27, 2021, Thug featured on an NPR Tiny Desk home concert, where he performed four new songs and teased an October 15 release date for the album, as seen on the back of his t-shirt. More promotion for Punk is a video published on October 13, 2021, of Thug smashing a $320,000 Rolls-Royce with the word \"punk\" painted on it in pink. Following Punk’s release, Thug stated during his appearance on The Breakfast Club that his track \"Day Before\" with Mac Miller was recorded on the day before Miller's death on September 7, 2018. <a href=\"https://www.last.fm/music/Young+Thug/PUNK\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Die Slow",
+                "Stressed",
+                "Stupid/Asking",
+                "Contagious",
+                "Rich Nigga Shit",
+                "Livin It Up",
+                "Yea Yea Yea",
+                "Insure My Wrist",
+                "Scoliosis",
+                "Bubbly",
+                "Road Rage",
+                "Faces",
+                "Droppin Jewels",
+                "Fifth Day Dead",
+                "Icy Hot",
+                "Love You More",
+                "Hate the Game",
+                "Day Before"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 30,
+        "fields": {
+            "title": "When Smoke Rises",
+            "artist": "Mustafa",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/ae06463c668aa8f1b3502c7dbe6fd59d.jpg",
+            "publish_date": "2021-05-28",
+            "genre": "hip-hop",
+            "summary": "The Toronto singer-songwriter’s debut album is a haunted meditation on grief written in the wake of reeling after his friend Smoke Dawg was murdered in 2018. But When Smoke Rises is much more than a collection of devastating ballads, though it’s also that: the 24-year-old used the record as a staging ground for his playful, striking colliding of genres and traditions, from sparse piano torch singing and folk strumming to hip-hop and spoken-word sound collages. But what remains most striking about this immaculate debut is Mustafa’s arresting, quivering vocals and his gut-punch portrayal of grief so all-encompassing that, as he sings on “Capo,” he can’t even scrub it off in the shower. J.A.B.",
+            "track_list": [
+                "Stay Alive",
+                "Air Forces",
+                "Separate",
+                "The Hearse",
+                "Capo",
+                "What About Heaven",
+                "Come Back"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 31,
+        "fields": {
+            "title": "Sound Ancestors",
+            "artist": "Madlib",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/0a3539a2bed22cfdec29945f0e42138a.png",
+            "publish_date": "2021-01-29",
+            "genre": "soul",
+            "summary": "Sound Ancestors is a studio album by Madlib, released on January 29, 2021. It was edited, arranged and mastered by Kieran Hebden (best known by the stage name Four Tet). <a href=\"https://www.last.fm/music/Madlib/Sound+Ancestors\">Read more on Last.fm</a>. Sound Ancestors is a studio album by Madlib, released on January 29, 2021. It was edited, arranged and mastered by Kieran Hebden (best known by the stage name Four Tet). <a href=\"https://www.last.fm/music/Madlib/Sound+Ancestors\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "There Is No Time (prelude)",
+                "The Call",
+                "Separate",
+                "Theme de Crabtree",
+                "Road of the Lonely Ones",
+                "Loose Goose",
+                "Dirtknock",
+                "Hopprock",
+                "Riddim Chant",
+                "Sound Ancestors",
+                "One for Quartabê/Right Now",
+                "Madlib",
+                "Two for 2 -for Dilla",
+                "Latino Negro",
+                "The New Normal",
+                "Chino",
+                "Duumbiyay"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 32,
+        "fields": {
+            "title": "Valentine",
+            "artist": "Snail Mail",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/0457ce75aabffbce6098b737fae65344.jpg",
+            "publish_date": "2021-11-05",
+            "genre": "alternative",
+            "summary":"\"Valentine\" is the second studio album by Snail Mail. It was released on November 5, 2021 through Matador Records. Lindsey Jordan tried to begin writing material for her second album immediately after her debut \"Lush\". However, she struggled to write because she was on tour and lacked opportunities for solitude. During the beginning of the COVID-19 pandemic, Jordan returned to her parents' home in Baltimore, where she began to start working seriously on \"Valentine\". In November 2020, Jordan spent 45 days in a rehab facility in Arizona, an experience she references directly in \"Ben Franklin\". \"Valentine\" received critical acclaim upon <a href=\"https://www.last.fm/music/Snail+Mail/Valentine\">Read more on Last.fm</a>. \"Valentine\" is the second studio album by Snail Mail. It was released on November 5, 2021 through Matador Records. Lindsey Jordan tried to begin writing material for her second album immediately after her debut \"Lush\". However, she struggled to write because she was on tour and lacked opportunities for solitude. During the beginning of the COVID-19 pandemic, Jordan returned to her parents' home in Baltimore, where she began to start working seriously on \"Valentine\". In November 2020, Jordan spent 45 days in a rehab facility in Arizona, an experience she references directly in \"Ben Franklin\".\n\n\"Valentine\" received critical acclaim upon release, earning a Metacritic score of 88/100 and the 'Best New Music' certification by Pitchfork. Olivia Horn of Pitchfork wrote that Jordan \"flirts with pop—sharpening her hooks, reaching for the synths and strings\", in contrast to the \"limited possibilities of a three-piece rock band\" on her previous album \"Lush\". Horn rated the album 8.5/10, stating that Jordan's songwriting was \"dazzlingly sharp and passionate\". In a glowing review for NME, El Hunt wrote that \"Jordan's songwriting is as astute as ever, and her exploration of love here is set to a rich palette of explorative strings and synths\", rating the album 5 stars out of 5. Writing for AllMusic, Marcy Donelson gave the album 3.5 starts out of 5, arguing that while Valentine represents a \"bold musical step\" for Jordan, it nevertheless \"leaves some of her distinctiveness behind.\" <a href=\"https://www.last.fm/music/Snail+Mail/Valentine\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Valentine",
+                "Ben Franklin",
+                "Headlock",
+                "Light Blue",
+                "Forever (Sailing)",
+                "Madonna",
+                "c. et al",
+                "Glory",
+                "Automate",
+                "Mia"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 33,
+        "fields": {
+            "title": "Still Over It",
+            "artist": "Summer Walker",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/5255bee0fd532f227c2ffc8a21d59397.jpg",
+            "publish_date": "2021-11-05",
+            "genre": "hip-hop",
+            "summary":"Still Over It is the second studio album by American singer Summer Walker, released on November 5, 2021, by LVRN and Interscope. On the two-year anniversary of her debut album, Walker announced the release of Still Over It through a video teaser. Still Over It charts a journey through a messy and complicated breakup. Walker wants you to know she’s singing about her ex-boyfriend and the father of her child, noted Atlanta producer London on da Track. London not only contributes production to half of the album; he’s also the subject of Walker’s lyrical anguish. Her sadness and insecurities aren’t <a href=\"https://www.last.fm/music/Summer+Walker/Still+Over+It\">Read more on Last.fm</a>. Still Over It  is the second studio album by American singer Summer Walker, released on November 5, 2021, by LVRN and Interscope. On the two-year anniversary of her debut album, Walker announced the release of Still Over It through a video teaser. \nStill Over It charts a journey through a messy and complicated breakup. Walker wants you to know she’s singing about her ex-boyfriend and the father of her child, noted Atlanta producer London on da Track. London not only contributes production to half of the album; he’s also the subject of Walker’s lyrical anguish. Her sadness and insecurities aren’t theoretical, and her songwriting is most powerful when she’s descriptive about the depths of that agony: “How could you make me spend my whole fucking pregnancy alone?”\n\nWalker and London aren’t the album’s only contributors, nor the only characters in its story. Opening track “Bitter” is a hazy stream of consciousness where Walker presumably addresses her social-media spats with the mothers of London’s other children (“So why you puttin’ on for The Shade Room and Insta?” she questions). The track ends with a voicemail from Cardi B, who advises Walker to “put that drama in your music.” Lead single “Ex for a Reason”—featuring City Girls’ JT and co-produced by Sean Garrett—shines with a sleek hook and bubbly production reminiscent of Garrett’s early-2000s hits. On the pop-infused “No Love,” Walker and SZA regret defending a man who isn’t worth it: “Tried to act like I wasn’t good enough in your eyes\/Funny now that you callin’, that you ringin’ my line,” Walker sings. <a href=\"https://www.last.fm/music/Summer+Walker/Still+Over+It\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Bitter",
+                "Ex For A Reason",
+                "No Love",
+                "throw it away",
+                "Reciprocate",
+                "Circus",
+                "insane",
+                "Constant Bullshit",
+                "Switch A Nigga Out",
+                "Unloyal",
+                "Closure",
+                "Toxic",
+                "Dat Right There",
+                "Screwin",
+                "Broken Promises",
+                "Session 33",
+                "4th Baby Mama",
+                "Ciara's Prayer"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 34,
+        "fields": {
+            "title": "Driver",
+            "artist": "Adult Mom",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/e788577c7165d1501e3aa1a2b704016c.jpg",
+            "publish_date": "2021-08-08",
+            "genre": "indie",
+            "summary":"Driver is Adult Mom’s third studio album released on March 5, 2021 via Epitaph Records. It was produced by Stevie Knipe and Kyle Pulley at Headroom Studios in Philadelphia, Pennsylvania. On November 12, 2021, Adult Mom released a live album performing every song from Driver at Headroom Studios. <a href=\"https://www.last.fm/music/Adult+Mom/Driver\">Read more on Last.fm</a>. Driver is Adult Mom’s third studio album released on March 5, 2021 via Epitaph Records. It was produced by Stevie Knipe and Kyle Pulley at Headroom Studios in Philadelphia, Pennsylvania. On November 12, 2021, Adult Mom released a live album performing every song from Driver at Headroom Studios. <a href=\"https://www.last.fm/music=/Adult+Mom/Driver\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Passenger",
+                "Wisconsin",
+                "Breathing",
+                "Berlin",
+                "Sober",
+                "Dancing",
+                "Adam",
+                "Regret It",
+                "Checking Up",
+                "Frost"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 35,
+        "fields": {
+            "title": "An Evening With Silk Sonic",
+            "artist": "Silk Sonic",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/7c35d09990a280642f2d7ed58da39de3.jpg",
+            "publish_date": "2021-11-12",
+            "genre": "funk",
+            "summary":"An Evening with Silk Sonic is the debut studio album by American R&B duo Silk Sonic, composed of recording artists Bruno Mars and Anderson .Paak. It was released on November 12, 2021, by Aftermath Entertainment and Atlantic Records. Mars reunited with Christopher Brody Brown, while .Paak reached out to Domitille Degalle and JD Beck to write the album. Silk Sonic recruited American musician Bootsy Collins for narration, and composers such as D'Mile to co-produce the album, which was recorded in 2017 and early 2020 to mid-2021. Three singles preceded the album: the lead single \"Leave the Door Open\" was a <a href=\"https://www.last.fm/music/Silk+Sonic/An+Evening+with+Silk+Sonic\">Read more on Last.fm</a>. An Evening with Silk Sonic is the debut studio album by American R&B duo Silk Sonic, composed of recording artists Bruno Mars and Anderson .Paak. It was released on November 12, 2021, by Aftermath Entertainment and Atlantic Records. Mars reunited with Christopher Brody Brown, while .Paak reached out to Domitille Degalle and JD Beck to write the album. Silk Sonic recruited American musician Bootsy Collins for narration, and composers such as D'Mile to co-produce the album, which was recorded in 2017 and early 2020 to mid-2021. Three singles preceded the album: the lead single \"Leave the Door Open\" was a commercial success, topping the Billboard Hot 100 chart as Mars's eighth number one song in the United States and Paak's first. The follow-up, \"Skate\", charted moderately, reaching number 14 on the Billboard Hot 100 chart. The third single, \"Smokin Out the Window\", was released on November 5, 2021. <a href=\"https://www.last.fm/music/Silk+Sonic/An+Evening+with+Silk+Sonic\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Silk Sonic Intro",
+                "Leave the Door Open",
+                "Fly as Me",
+                "After Last Night",
+                "Smokin Out the Window",
+                "Put on a Smile",
+                "777",
+                "Skate",
+                "Blast Off"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 36,
+        "fields": {
+            "title": "Sometimes I Might Be Introvert",
+            "artist": "Little Simz",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/592ce13b8d7cfee26e13692b3c6985e8.jpg",
+            "publish_date": "2021-08-08",
+            "genre": "hip hop",
+            "summary":"Sometimes I Might Be Introvert is the fourth studio album by Little Simz, released on September 3,2021. It was produced by frequent collaborator Inflo, and includes guest appearances from Cleo Sol and Obongjayar. The album debuted at #4 on the UK Charts, and received critical acclaim, getting a nomination at the Brit Awards. <a href=\"https://www.last.fm/music/Little+Simz/Sometimes+I+Might+Be+Introvert\">Read more on Last.fm</a>. Sometimes I Might Be Introvert is the fourth studio album by Little Simz, released on September 3,2021. It was produced by frequent collaborator Inflo, and includes guest appearances from Cleo Sol and Obongjayar. The album debuted at #4 on the UK Charts, and received critical acclaim, getting a nomination at the Brit Awards. <a href=\"https://www.last.fm/music/Little+Simz/Sometimes+I+Might+Be+Introvert\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Introvert",
+                "Woman",
+                "Two Worlds Apart",
+                "I Love You I Hate You",
+                "Little Q, Pt. 1",
+                "Little Q, Pt. 2",
+                "Gems",
+                "Speed",
+                "Standing Ovation",
+                "I See You",
+                "The Rapper That Came To Tea",
+                "Rollin Stone",
+                "Protect My Energy",
+                "Never Make Promises",
+                "Point And Kill",
+                "Fear No Man",
+                "The Garden",
+                "How Did You Get Here",
+                "Miss Understood"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 37,
+        "fields": {
+            "title": "Shiesty Season",
+            "artist": "Pooh Shiesty",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/8c522b292b103d5a1e7cc08cd7755473.jpg",
+            "publish_date": "2021-02-05",
+            "genre": "hip hop",
+            "summary":"With Shiesty Season, Pooh Shiesty scored one of the biggest mixtape debuts in years. The Memphis rapper and Gucci Mane protégé espouses an unyielding stream of brittle gunshot boasts, dropping frequent references to Draco assaults, popping off at snitches and the murder game with a plainspoken bounce flow. “You know who took that shit from you, come get it back in blood,” he growls on “Back in Blood,” his hit single with Lil Durk. While Pooh Shiesty fed the rap world’s bottomless appetite for unforgiving trap hammers, his real-life situation hewed too close to rap fantasy: As of this writing, he sits in prison, facing years of incarceration over firearms and assault charges.",
+            "track_list": [
+                "Shiesty Season Intro",
+                "Back In Blood",
+                "Guard Up",
+                "Ugly",
+                "Neighbors",
+                "50 Shots",
+                "No Chorus",
+                "Box of Churches",
+                "Making A Mess",
+                "Choppa Way",
+                "Take a Life",
+                "Gone MIA",
+                "Big 13 Gang",
+                "Drop Some Shit",
+                "See Red",
+                "Master P",
+                "The Garden",
+                "How Did You Get Here",
+                "Twerksum"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 38,
+        "fields": {
+            "title": "Stand for Myself",
+            "artist": "Yola",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/afee6025668b21a38c66de6d15b4e543.jpg",
+            "publish_date": "2021-07-30",
+            "genre": "country",
+            "summary":"On Stand for Myself, Yola built on the stylistic range of 2019’s Walk Through Fire, sprinkling in hints of disco and humid Memphis soul to complement her folk-rock leanings. Her second album with collaborator Dan Auerbach, Stand for Myself, sees Yola taking hold of her agency as a writer. “A coward in the shadows, no view from above,” she sings in the scorching title track. But no more: Yola also rails against divisive governments and tokenism, while celebrating her sexuality and cherished friendships. It’s top-level stuff from one of contemporary pop’s greatest singers, who just so happens to also be one of its sharpest songwriters.",
+            "track_list": [
+                "Barely Alive",
+                "Dancing Away in Tears",
+                "Diamond Studded Shoes",
+                "Be My Friend",
+                "Great Divide",
+                "Starlight",
+                "If I Had to Do It All Again",
+                "Now You're Here",
+                "Whatever You Want",
+                "Break the Bough",
+                "Like a Photograph",
+                "Stand for Myself"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 39,
+        "fields": {
+            "title": "Don’t Go Tellin’ Your Momma",
+            "artist": "Topaz Jones",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/770x0/d6eb25d7c1be3111490708bdb7152c9e.jpg#d6eb25d7c1be3111490708bdb7152c9e",
+            "publish_date": "2021-04-23",
+            "genre": "soul",
+            "summary":"Topaz Jones’ second album is a boogie-funk-inflected meditation on Black identity, with overwhelmingly pretty tunes that illustrate topics like love, family dysfunction, and clichés. “Ooh, you think you’re masculine because of rap/I know that you’re pacifist, it’s just an act,” he raps on “D.I.A.L.” Jones proves himself a searingly introspective writer that fleshes out numerous angles of a given topic, but he’s adept enough to let melodic joy and buoyant rhythms overtake his navel-gazing lyrics. To accompany Don’t Go Tellin’ Your Mama, Jones co-directed an impressive short film that delineates in visual terms — short performances, interviews with elders like Black Thought, and archival video clips — how the modern Black experience eludes simple stereotypes while updating community traditions.",
+            "track_list": [
+                "Mirror",
+                "D. I. A. L.",
+                "Herringbone",
+                "Black Tame",
+                "Baba 70S",
+                "Amphetamines",
+                "Sourbelts",
+                "D. O. A.",
+                "Who?",
+                "Gold",
+                "Rich",
+                "Blue",
+                "Buggin"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 40,
+        "fields": {
+            "title": "Medicine at Midnight",
+            "artist": "Foo Fighters",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/063ae4ee933f2f8395c01a913acdfb4c.jpg",
+            "publish_date": "2021-02-02",
+            "genre": "rock",
+            "summary":"\"Medicine at Midnight\" is the tenth studio album by American rock band the Foo Fighters. It was released on February 5, 2021 on Roswell/RCA Records. The album consists of 9 new original songs. <a href=\"https://www.last.fm/music/Foo+Fighters/Medicine+at+Midnight\">Read more on Last.fm<\/a>. \"Medicine at Midnight\" is the tenth studio album by American rock band the Foo Fighters. It was released on February 5, 2021 on Roswell/RCA Records. \nThe album consists of 9 new original songs.  <a href=\"https://www.last.fm/music/Foo+Fighters/Medicine+at+Midnight\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Making a Fire",
+                "Shame Shame",
+                "Cloudspotter",
+                "Waiting on a War",
+                "Medicine at Midnight",
+                "No Son of Mine",
+                "Holding Poison",
+                "Chasing Birds",
+                "Love Dies Young"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 41,
+        "fields": {
+            "title": "Remember Her Name",
+            "artist": "Mickey Guyton",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/faf0431740f123b66cb6e3eb2e8b46b5.jpg",
+            "publish_date": "2021-07-07",
+            "genre": "country",
+            "summary":"Remember Her Name is the first full album by country singer-songwriter Mickey Guyton. It will released on September 24th, 2021 by Capitol Records Nashville. It will feature 3 previously released songs:\"\"Black Like Me\", \"What Are You Gonna Tell Her?\", and \"Rosé\", all of which appeared on her 2020 EP, Bridges. <a href=\"https://www.last.fm/music/Mickey+Guyton/Remember+Her+Name\">Read more on Last.fm</a>. Remember Her Name is the first full album by country singer-songwriter Mickey Guyton. It will released on September 24th, 2021 by Capitol Records Nashville. It will feature 3 previously released songs: \"Black Like Me\", \"What Are You Gonna Tell Her?\", and \"Rosé\", all of which appeared on her 2020 EP, Bridges. <a href=\"https://www.last.fm/music/Mickey+Guyton/Remember+Her+Name\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Remember Her Name",
+                "All American",
+                "Different",
+                "Love My Hair",
+                "Lay It on Me",
+                "Higher",
+                "Dancing in the Living Room",
+                "Do You Really Wanna Know",
+                "Black Like Me",
+                "Words",
+                "What Are You Gonna Tell Her?",
+                "Smoke",
+                "Rosé",
+                "Indigo",
+                "If I Were a Boy"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 42,
+        "fields": {
+            "title": "Let Me Do One More",
+            "artist": "Illuminati Hotties",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/d7328eabb1f2db75c96597ea44aa64cc.jpg",
+            "publish_date": "2021-07-07",
+            "genre": "indie",
+            "summary":"“Tenderpunk” is how singer-songwriter-producer-engineer Sarah Tudzin describes her music as Illuminati Hotties, and the group’s superb third album, Let Me Do One More, is as sweet, scrappy, silly, and sincere as that label suggests. Riffs and wicked one-liners rain down on songs like “Mmmoooaaaaayaya” and “Joni: LA’s No. 1 Health Goth,” but Tudzin’s equally shrewd, and devastatingly honest, on the country-tinged “u v v p,” the acoustic ballad “Growth,” and the love-in-the-end-times stunner “Threatening Each Other re: Capitalism.” Let Me Do One More isn’t just loud, fast Illuminati Hotties, but it is — to crib a line from the excellent opener “Pool Hopping” — “all rippers, no more skippers",
+            "track_list": [
+                "Pool Hopping",
+                "Mmmoooaaaaayaya",
+                "Knead",
+                "Threatening Each Other re: Capitalism",
+                "Illuminati Hotties",
+                "u v v p",
+                "Protector",
+                "Joni: LA's No. 1 Health Goth",
+                "Kickflip",
+                "Toasting",
+                "The Sway",
+                "Cheap Shoes",
+                "Growth"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 43,
+        "fields": {
+            "title": "Lyke Mike",
+            "artist": "Myke Towers",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/7245adf42c58355599043bbe4a6e1781.jpg",
+            "publish_date": "2021-04-23",
+            "genre": "reggaeton",
+            "summary":"Hasta la que no hablan español se pasan enviando ‘OMG,”” Myke Towers raps in the first dazzling verse of many on his second studio album. True indeed: Lyke Mike is the kind of lyrical showcase that makes you want to tell a friend about, especially if your taste in hip-hop skews toward the classics. The Puerto Rican star flows with effortless confidence, stacking bars with a flair that’s as much Big L as Tego Calderon. Myke floats over synth-string stabs on “Sr. de los Cielos”; dances deftly around a salsa sample on “Pin Pin”; spins a casually unforgettable hook on “Cuando Me Ven”; tangles with a horn loop on “Papa Johns.” All 23 tracks show an MC whose verbal athleticism is too elite to ignore.",
+            "track_list": [
+                "MÍRENME AHORA",
+                "CUANDO ME VEN",
+                "LO INVERTÍ",
+                "JOVEN LEYENDA",
+                "PIN PIN",
+                "SR DE LOS CIELOS",
+                "ALTO RIESGO",
+                "Cuenta",
+                "PRIMER MELÓN",
+                "RONCARME",
+                "JUGADOR FRANQUICIA",
+                "AJEDRÉZ",
+                "PAPA JOHNS",
+                "BURBERRY",
+                "NO SALEN",
+                "PFA",
+                "Confiar",
+                "BAGUETTES",
+                "NIVELES",
+                "MALDITA ENVIDIA"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 44,
+        "fields": {
+            "title": "Senjutsu",
+            "artist": "Iron Maiden",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/fc061092f1ed402405bc961e4e3a671f.jpg",
+            "publish_date": "2021-09-09",
+            "genre": "heavy metal",
+            "summary":"Iron Maiden released their 17th Studio album Senjutsu in 2021. It was recorded at Guillaume Tell Studio in early 2019. Senjutsu (Japanese: 戦術, loosely translated as \"tactics and strategy\") is the seventeenth studio album by British heavy metal band Iron Maiden, released on 3 September 2021. Senjutsu is the band's first studio album in nearly six years, following The Book of Souls (2015), marking the longest gap between two Iron Maiden studio albums. This is also their second double album, and their first studio album since Powerslave (1984) to have no songwriting contributions from guitarist Dave Murray in any way, <a href=\"https://www.last.fm/music/Iron+Maiden/Senjutsu\">Read more on Last.fm</a>. Iron Maiden released their 17th Studio album Senjutsu in 2021. It was recorded at Guillaume Tell Studio in early 2019. Senjutsu (Japanese: 戦術, loosely translated as \"tactics and strategy\") is the seventeenth studio album by British heavy metal band Iron Maiden, released on 3 September 2021.\n\nSenjutsu is the band's first studio album in nearly six years, following The Book of Souls (2015), marking the longest gap between two Iron Maiden studio albums. This is also their second double album, and their first studio album since Powerslave (1984) to have no songwriting contributions from guitarist Dave Murray in any way, as well as the first since Virtual XI (1998) to feature multiple songs written by bassist Steve Harris alone.\n\nThe name of the album is rendered on the right side of the cover art by the actual vertical Japanese spelling of \"senjutsu\" (戦術), and on the left side by a font reminiscent of Japanese characters.\n\nCritical reception:\nAt Metacritic, which assigns a normalized rating out of 100 to reviews from professional publications, the album has an average score of 86 based on 14 reviews, indicating \"universal acclaim\". Wall of Sound scored the album 9/10, calling it an \"epic and triumphant return for the lads... better balanced ... with some interesting songwriting\".\n\nSenjutsu is one of Iron Maiden's most successful albums, chart-wise, to date peaking at number one in numerous countries such as Belgium, Finland, Germany, Italy, Scotland, Sweden and Switzerland, and marked their first album not to peak that position in the UK charts since A Matter of Life and Death (2006); it did, however, top the UK Rock & Metal Singles and Albums Charts. The album also gave the band its highest chart position in the US at number three.\n\nArtwork:\nThe album Senjutsu marks the second use of the band's original logotype (with the extended letters R, M and N) on a studio album cover since The X Factor (1995), the previous one being for The Book of Souls (2015). The album cover by Mark Wilkinson presents Eddie dressed up as a samurai and holding a katana.\n\nTracks:\nCD 1\n 01 -  Senjutsu (8:20)  (Smith/Harris) 02 -  Stratego (4:59)  (Gers/Harris)03 -  The Writing On The Wall (6:13)  (Smith/Dickinson) 04 -  Lost In A Lost World  (9:31)  (Harris)05-  Days Of Future Past  (4:03)  (Smith\/Dickinson)06 -  The Time Machine  (7:09)  (Gers/Harris)\nCD 2\n 07 -  Darkest Hour  (7:20)  (Smith\/Dickinson)08 -  Death Of The Celts (10:20) (Harris) 09 -  The Parchment (12:39)  (Harris)10 -  Hell On Earth  (11:19)  (Harris)\n\n <a href=\"https://www.last.fm/music/Iron+Maiden/Senjutsu\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Senjutsu",
+                "Stratego",
+                "The Writing on the Wall",
+                "Lost in a Lost World",
+                "Days of Future Past",
+                "The Time Machine",
+                "Darkest Hour",
+                "Death of the Celts",
+                "The Parchment",
+                "Hell on Earth"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 45,
+        "fields": {
+            "title": "Bo Jackson",
+            "artist": "Boldy James and the Alchemist",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/500x500/3c1e635245bec7dfe92199e108135908.jpg",
+            "publish_date": "2021-08-12",
+            "genre": "rap",
+            "summary":"Producer Alchemist and rapper Boldy James reconnected for the hard-nosed, slugging Bo Jackson, a follow-up to last year’s The Price of Tea in China. The second half of “Double Hockey Sticks” is spooky as a haunted house, while “Brickmile to Montana” is bludgeoning and thunderous; both demonstrate that James is still focused on delivering cold-eyed stories of drug dealing and shoot-outs in an unchanging tone. The beat in “First 48 Freestyle” channels some of the grandeur of early-2000s radio rap, but even this opulent setting can’t shake James’ focus — or make him bother to write a chorus. “Thuggin’ in the concrete jungle, planet of the apes,” James raps. “Every step I take, I take a risk, I can’t make one mistake.",
+            "track_list": [
+                "Double Hockey Sticks",
+                "Turpentine",
+                "Brickmile To Montana",
+                "E.P.M.D",
+                "Steel Wool",
+                "Photographic Memories",
+                "Speed Trap",
+                "Diamond Dallas",
+                "Flight Risk",
+                "Illegal Search & Seizure",
+                "Fake Flowers",
+                "3rd Person",
+                "First 48 Freestyle",
+                "Drug Zone"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 46,
+        "fields": {
+            "title": "The Chaos Chapter: Fight or Escape",
+            "artist": "Tomorrow X Together",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/500x500/4434aa6b3c568b58a3b261739f762c94.jpg",
+            "publish_date": "2021-08-17",
+            "genre": "K-Pop",
+            "summary":"This ascendant South Korean boy band elevated their sound and image this year with The Chaos Chapter: Fight or Escape, a repackaging of their sophomore studio album, The Chaos Chapter: Freeze. All five members of Tomorrow X Together got writing credits on the album, delivering their first English-language song with the infectious “Magic,” while incorporating arena pop rock into their already high-energy sound on “0X1=Lovesong (I Know I Love You).” The highlight is the TikTok-viral ballad “Anti-Romantic,” a tender tale of heartbreak realism that showcases the group’s impressive vocal and emotional range.",
+            "track_list": [
+                "LO$ER=LOVER",
+                "ANTI-ROMANTIC",
+                "0X1=LOVESONG",
+                "MAGIC",
+                "소악행",
+                "밸런스 게임",
+                "No Rules",
+                "교환일기 (두밧두 와리와리",
+                "디어 스푸트니크",
+                "Frost",
+                "0X1=LOVESONG"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 47,
+        "fields": {
+            "title": "Timelezz",
+            "artist": "Jhay Cortez",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/e430c7465d6976e0bc8f59dbd9aac6ba.jpg",
+            "publish_date": "2021-09-03",
+            "genre": "reggaeton",
+            "summary":"Jhay Cortez got his start almost two decades ago, as a 14-year-old whiz kid who wrote and produced for some of the biggest acts in Puerto Rico. While he’s had massive breakthroughs, such as his 2020 Bad Bunny collaboration “Dákiti,” he hits a new peak on his sophomore album, Timelezz, and goes harder than he ever has before. He throws his full weight into the brash, unblinking bars of “Los Bo,” shows off his slinky wordplay on the up-tempo bounce of “Kobe en LA 2.0,” and teams up with Skrillex to keep pioneering reggaeton’s elecro-wave on “En Mi Cuarto.",
+            "track_list": [
+                "Dilema",
+                "Tokyo",
+                "Esta Dejá",
+                "Ley Seca",
+                "Los Rompediskoteca",
+                "En Mi Cuarto",
+                "Mi Vicio",
+                "Dale Como Es",
+                "Nos Matamos",
+                "Ropa Interior",
+                "Los Bandoleros",
+                "Me Extraña",
+                "Dile (Homenaje)",
+                "Christian Dior",
+                "Los Bo",
+                "Kobe En LA 2.0",
+                "Eternamente"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 48,
+        "fields": {
+            "title": "Certified Lover Boy",
+            "artist": "Drake",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/f155727609d49afb2980599d040bcf92.jpg",
+            "publish_date": "2021-04-09",
+            "genre": "hip hop",
+            "summary":"Certified Lover Boy is Drake’s sixth studio album and the follow-up to his fifth studio album, Scorpion, which was released on June 29, 2018. On April 9, 2019, Drake first announced that he was working on a new album during the London stop on his Assassination Vacation Tour. In June 2019, Drake once again teased his progress on the album via Instagram, where the caption read: \"Album mode In September 2019, multiple publications reported that Drake had finished his album, claiming that the album was set to release in November 2019. These rumors were later proved to be inaccurate.\" On <a href=\"https://www.last.fm/music/Drake/Certified+Lover+Boy\">Read more on Last.fm</a>. Certified Lover Boy is Drake’s sixth studio album and the follow-up to his fifth studio album, Scorpion, which was released on June 29, 2018.\n\nOn April 9, 2019, Drake first announced that he was working on a new album during the London stop on his Assassination Vacation Tour. In June 2019, Drake once again teased his progress on the album via Instagram, where the caption read:\n\n\"Album mode\nIn September 2019, multiple publications reported that Drake had finished his album, claiming that the album was set to release in November 2019. These rumors were later proved to be inaccurate.\"\n\nOn December 10, 2019, Drake made a guest appearance at DaBaby’s concert in Toronto, where he revealed that he was working on the album:\n\n\"I’ma go back to the crib and try to finish this album up so we can turn up in 2020.\"\n\nOn May 1, 2020, Drake dropped his fifth solo mixtape, Dark Lane Demo Tapes as a precursor to his sixth album. The day before, he announced that the album would be released during the summer of 2020.\n\nOn August 14, 2020, Drake released the album’s lead single, “Laugh Now Cry Later,” which features Lil Durk. Alongside the song’s release, Drake announced the title of the album via Instagram.\n\nOn October 24, 2020, his 34th birthday, Drake announced that the album would be released in January 2021 via the album’s trailer, backtracking on his claims that the album would be released in summer 2020. The trailer saw Drake recreating the covers of his past LPs, which includes February 2009’s So Far Gone, November 2011’s Take Care, September 2013’s Nothing Was the Same and May 2020’s Dark Lane Demo Tapes.\n\nHowever, on January 20, 2021, Drake said the album “won’t be dropping in January” via his Instagram stories but did note it would still be releasing later in the year.\n\nThe album finally released on September 3rd 2021. <a href=\"https://www.last.fm/music/Drake/Certified+Lover+Boy\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Champagne Poetry",
+                "Papi's Home",
+                "Girls Want Girls",
+                "In The Bible",
+                "Love All",
+                "Fair Trade",
+                "Way 2 Sexy",
+                "TSU",
+                "N 2 Deep",
+                "Pipe Down",
+                "Yebba",
+                "No Friends in the Industry",
+                "Knife Talk",
+                "7AM on Bridle Path",
+                "Race My Mind",
+                "Fountains",
+                "Get Along Better",
+                "You Only Live Twice",
+                "IMY2",
+                "Fucking Fans",
+                "The Remorse"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 49,
+        "fields": {
+            "title": "The Horses and the Hounds",
+            "artist": "James McMurtry",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/028c7d751b1465da0bc7f1a2205918c1.jpg",
+            "publish_date": "2021-08-20",
+            "genre": "rock",
+            "summary":"Staring down 60, the Austin singer-songwriter continued on his recent streak of stunners by delivering a career high point with this collection of sharply told tales of wrinkled equestrians, ashamed murderers, disenchanted Iraq War veterans, and long-stewing flirts set to a West Coast, Petty-inspired roots rock from longtime collaborator Ross Hogarth. “Cashing in on a 30-year crush,” McMurtry sings, most memorably, on the instant-classic opener, “Canola Fields.” “You can’t be young and do that.” Nor can you be young and write an album as wise, witty, and emotionally generous as McMurtry’s latest.",
+            "track_list": [
+                "Canola Fields",
+                "If It Don't Bleed",
+                "Operation Never Mind",
+                "Jackie",
+                "Decent Man",
+                "Vaquero",
+                "The Horses and the Hounds",
+                "Ft. Walton Wake - Up Call",
+                "What's the Matter",
+                "Blackberry Winter"
+            ]
+        }
+    },
+    {
+        "model": "main_app.album",
+        "pk": 50,
+        "fields": {
+            "title": "Daddy’s Home",
+            "artist": "St. Vincent",
+            "photo_url": "https://lastfm.freetls.fastly.net/i/u/174s/d7583f4cbe495a0b60a2f0d4287711be.png",
+            "publish_date": "2021-05-14",
+            "genre": "indie",
+            "summary":"Daddy's Home is the sixth studio album by American musician St. Vincent, released on May 14, 2021, by Loma Vista Recordings. Like its predecessor, Masseduction (2017), Annie Clark produced the album alongside Jack Antonoff. The album was promoted by the lead single, \"Pay Your Way in Pain\", released on March 5, 2021. Daddy's Home was inspired by Clark's father's release from prison at the end of 2019, as well as the musical palette of New York City in the first half of the 1970s. <a href=\"https://www.last.fm/music/St.+Vincent/Daddy%E2%80%99s+Home\">Read more on Last.fm</a>. Daddy's Home is the sixth studio album by American musician St. Vincent, released on May 14, 2021, by Loma Vista Recordings. Like its predecessor, Masseduction (2017), Annie Clark produced the album alongside Jack Antonoff. The album was promoted by the lead single, \"Pay Your Way in Pain\", released on March 5, 2021. Daddy's Home was inspired by Clark's father's release from prison at the end of 2019, as well as the musical palette of New York City in the first half of the 1970s. <a href=\"https://www.last.fm/music/St.+Vincent/Daddy%E2%80%99s+Home\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+            "track_list": [
+                "Pay Your Way In Pain",
+                "Down and Out Downtown",
+                "Daddy's Home",
+                "Live In the Dream",
+                "The Melting of the Sun",
+                "Humming (interlude 1)",
+                "The Laughing Man",
+                "Down",
+                "Humming (interlude 2)",
+                "Somebody Like Me",
+                "My Baby Wants a Baby",
+                "…At The Holiday Party",
+                "Candy Darling",
+                "Humming (interlude 3)"
+            ]
+        }
     }
 ]
