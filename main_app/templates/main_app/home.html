@@ -42,7 +42,7 @@
 
     {%for key, value in data.album.tags.items %}
         {%for name in value %}
-            {% if forloop.counter0 == 1%} 
+            {% if forloop.counter0 == 0%} 
                 <p>Genre: {{name.name}} </p> 
             {% endif %}
         {% endfor %}
