@@ -1,5 +1,6 @@
 from os import environ
 from datetime import datetime
+import re
 
 from django.contrib import messages
 from django.shortcuts import redirect, render
@@ -17,9 +18,15 @@ env = environ.Env()
 environ.Env.read_env()
 
 
-# Create your views here.
 class Home(TemplateView):
-    template_name = 'main_app/home.html'
+    
+    def get(self, request):
+        return redirect('/accounts/login/')
+
+
+
+class CreateAlbum(TemplateView):
+    template_name = 'main_app/create_album.html'
 
     def get(self, request, *args, **kwargs):
         data = {}
@@ -67,7 +74,11 @@ class Home(TemplateView):
 
         new_album.save()
         profile.albums.add(new_album)
-        return render(request, self.template_name, {'form': form, 'data': data})
+        
+        if new_album.artist == "":
+            return render(request, self.template_name, {'form': form, 'data': data})
+        else:
+            return redirect(f"/my_albums/delete/{new_album.pk}")
 
 
 
@@ -82,9 +93,6 @@ class Signup(CreateView):
         return redirect(self.success_url)
 
 
-class ShowAlbumDetails(TemplateView):
-    template_name = 'main_app/details.html'
-
 
 class Index(TemplateView):
     template_name = 'main_app/index.html'
@@ -94,12 +102,15 @@ class Index(TemplateView):
         data = serializers.serialize("python",Album.objects.all()) 
         return render(request, self.template_name, {'data': data, 'user_data': user_data})
 
+
+
 class MyAlbums(TemplateView):
     template_name = 'main_app/my_albums.html'
 
     def get(self, request):
         data = serializers.serialize("python", Album.objects.filter(profile=request.user.profile))
         return render(request, self.template_name, {'data': data})
+
 
 
 class DeleteAlbum(DeleteView):
@@ -113,9 +124,9 @@ class DeleteAlbum(DeleteView):
         data = serializers.serialize("python", Album.objects.all())
         for obj in data:
             if obj["pk"] == id_int:
-                context['album_cover'] = obj["fields"]["photo_url"]
+                context['album_cover'] = obj["fields"]
             elif obj["fields"]["title"] == id_str:
-                context['album_cover'] = obj["fields"]["photo_url"]
+                context['album_cover'] = obj["fields"]
                 
         return context
     

@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header 
+class="fixed top-0 w-full z-10 flex justify-between p-5 bg-gradient-to-b 
+from-black to-[rgb(20,20,20)] text-red-600">
+    <a href="{% url 'index' %}" class="font-bold text-xl">
+        THE RECORD SLEEVE
+    </a>
+    <div>
+        <h2 
+        class="user relative font-bold hover:bg-[rgba(0,0,0,.5)] px-5 py-1 rounded-lg">
+        {{user.username}}
+        </h2>
+        <div style="display:none" 
+        class="fixed right-4 top-[4.5rem] dropdown absolute bg-black/75 
+        w-28 font-semibold rounded-md p-2 text-right" >
+            <p><a href="{% url 'index' %}">Home</a></p>
+            <p><a href="{% url 'my_albums' %}">My Albums</a></p>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+    </div>
+</header>
+<main class="main bg-[rgb(20,20,20)] min-h-screen h-full pt-16 text-white">
+    <div class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-3/4">
+        <h1 class="text-6xl font-black mb-5">
+            Search Album
+        </h1>
+        <form action="" method="get"
+        class="add-album-form">
+            {{ form.as_p }}
+            <input type="submit" value="ADD ALBUM"
+            class="add-album-submit w-full text-4xl font-bold tracking-wider pt-5
+            hover:font-black hover:text-red-600">
+        </form>
+        {% if messages %}
+        <ul class="messages absolute bottom-10 text-red-600 font-semibold">
+            {% for message in messages %}
+            <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</main>
+<footer class="grid grid-rows-[3rem_1fr_3rem] items-center gap-1 bottom-0 
+bg-[rgb(20,20,20)] text-gray-400 w-full p-10">
+    <p>Contact us: 1-800-555-3245</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 pb-3 gap-3 ">
+        <p>FAQ</p>
+        <p>help Center</p>
+        <p>Terms of Service</p>
+        <p>Privacy</p>
+        <p>Cookie Prefrences</p>
+        <p>Corporate Information</p>
+    </div>
+    <p class="relative bg-black border border-gray-400 w-24 p-2">
+        English 
+        <span class="absolute right-3 top-0.5 text-xl">
+            ⌄
+        </span>
+    </p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const dropdown = document.querySelector(".dropdown")
+    const user = document.querySelector(".user")
+    const drop = () => {
+        if(dropdown.style.display === "none"){
+            dropdown.style.display = "block"
+        } else {
+            dropdown.style.display = "none"
+        }
+    }
+
+    user.addEventListener("click", drop)
+</script>
+
+
+
+
+<!-- 
+{% if data %}
+    {% for key, value in data.items%}
+
+        <p> {{ value.artist }}</p>
+
+        <p>{{ key |capfirst }} : {{ value.name }}</p>
+
+        {%for key, value in data.album.image.3.items%}
+            {% if key == '#text' %}
+                <img src="{{value}}" alt="" height="400px" width="400px">
+            {% endif %}
+        {% endfor %}
+
+    {%for key, value in data.album.wiki.items%}
+        {% if key == 'published' %}
+            <p> Published: {{ value |safe  }}</p>
+        {% endif %}
+    {% endfor %}
+
+    {%for key, value in data.album.tags.items %}
+        {%for name in value %}
+            {% if forloop.counter0 == 0%} 
+                <p>Genre: {{name.name}} </p> 
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+
+    {%for key, value in data.album.tracks.items %}
+    <ol>
+        {%for name in value %}
+            <li>{{name.name}}</li>
+        {% endfor %}
+    </ol>
+    {% endfor %}
+
+
+    {%for key, value in data.album.wiki.items%}
+        {% if key == 'content' %}
+            <p>Summary <br> {{ value |safe  }}</p>
+        {% endif %}
+    {% endfor %}
+
+
+
+    {% endfor %}
+
+    
+{% endif %} -->
+{% endblock %}

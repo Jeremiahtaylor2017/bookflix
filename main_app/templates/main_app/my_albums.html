@@ -11,16 +11,19 @@ from-black to-[rgb(20,20,20)] text-red-600">
             {{user.username}}
         </h2>
         <div style="display:none" class="fixed right-4 top-[4.3rem] dropdown absolute 
-        bg-black/75 w-26 rounded-md p-2 text-right">
+        bg-black/75 w-28 font-semibold rounded-md p-2 text-right">
             <p><a href="{% url 'index' %}">Home</a></p>
             <p><a href="{% url 'logout' %}">Logout</a></p>
-            <p>Delete Account</p>
         </div>
     </div>
 </header>
 
-<h1 class="text-xl text-white pl-10 pb-5 font-bold fixed w-full z-10 bg-[rgb(20,20,20)] top-16">
+<h1 class="text-xl text-white pl-10 pb-5 font-bold fixed w-full z-10 bg-[rgb(20,20,20)] top-[4.3rem]">
     My Albums
+    <a href="{% url 'create_album' %}"
+    class="absolute right-10 hover:border-b-2 border-red-600">
+        Add Album
+    </a>
 </h1>
 <main class="bg-[rgb(20,20,20)] min-h-screen h-full mt-24 text-white">
     {% for album in data %}
