@@ -1,8 +1,8 @@
-# Bookflix
+# The Record Sleeve
 
 ## Introduction
 
-Bookflix is a book viewing app that allows users to access existing titles from the library and add their own books - Including cover, description, publishing date, etc.
+The Record Sleeve is a music app that allows users to access existing record's information from the library and search the last.FM API for additional records that they can add to their own personal album list - Including cover, description, publishing date, etc.
 
 ## Technologies Used
 
@@ -10,16 +10,30 @@ Bookflix is a book viewing app that allows users to access existing titles from 
 - Heroku
 - Django
 - PostgresSQL
-- AWS
+- Tailwind CSS
+- Last FM API
+
+## Screenshots
+
+![image](main_app/static/css/LiveScreenShot.png)
+![image](main_app/static/css/WireFrameShot.png)
 
 ## Getting Started
 
-[Click here]() to launch Bookflix
+[Click here](https://the-record-sleeve.herokuapp.com/) to launch The Record Sleeve
 
 ## Unsolved Problems
 
--N/A
+- Error handling around API requests, confirmation to save the album after you search, ghosting on the requests that creates random object, error messages during sign-up
 
 ## Future Ehancements
 
--N/A
+- Adjusting unsolved problems
+
+## Trello Board Link
+
+[Click here](https://trello.com/b/spBBIcQS/bookflix)
+
+## Pitch-Deck Link
+
+[Click here](https://docs.google.com/presentation/d/1YlR2KvDFdPw9K9s1T3NY2ZlANrS7gB14na8eWcAtaMc/edit#slide=id.g15b331459d1_2_10)
