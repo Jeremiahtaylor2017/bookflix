@@ -15,8 +15,8 @@ The Record Sleeve is a music app that allows users to access existing record's i
 
 ## Screenshots
 
-![image](https://imgur.com/gallery/ODooTtG)
-![image](https://imgur.com/gallery/L9vzAN8)
+![image](https://i.imgur.com/oGukqY5.png)
+![image](https://i.imgur.com/zYUG5wJ.jpeg)
 
 ## Getting Started
 
