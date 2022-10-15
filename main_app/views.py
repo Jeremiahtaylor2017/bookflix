@@ -7,8 +7,10 @@ from django.views.generic import TemplateView, CreateView, DeleteView
 from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.core import serializers
-from .models import Album
-from .forms import CreateUserForm, CreateAlbumForm, AlbumSearch
+
+from .models import Album, Profile
+
+from .forms import CreateUserForm, AlbumSearch
 
 import environ
 env = environ.Env()
@@ -22,6 +24,7 @@ class Home(TemplateView):
     def get(self, request, *args, **kwargs):
         data = {}
         form = AlbumSearch(request.GET)
+        profile = Profile.objects.get(user=request.user)
 
         if form.is_valid():
             data = form.get_album()
@@ -61,12 +64,9 @@ class Home(TemplateView):
                     for ke, val in v.items():
                         for index, name in enumerate(val):
                             new_album.track_list.append(name['name'])
-                            # print(name['name'])
-                        # print(val)
-                    # print(v)
-                # print(k, v)
-        # print(new_album.track_list)
+
         new_album.save()
+        profile.albums.add(new_album)
         return render(request, self.template_name, {'form': form, 'data': data})
 
 
