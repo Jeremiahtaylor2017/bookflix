@@ -14,8 +14,8 @@ from-black to-[rgb(20,20,20)] text-red-600">
         </h2>
         <div style="display:none" 
         class="fixed right-4 top-[4.3rem] dropdown absolute bg-black/75 
-        w-26 rounded-md p-2 text-right" >
-        <p><a href="{% url 'index' %}">Home</a></p>
+        w-28 font-semibold rounded-md p-2 text-right" >
+            <p><a href="{% url 'index' %}">Home</a></p>
             <p><a href="{% url 'my_albums' %}">My Albums</a></p>
             <a href="{% url 'logout' %}">Logout</a>
         </div>
@@ -27,32 +27,31 @@ from-black to-[rgb(20,20,20)] text-red-600">
     <div class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
         <div class="relative">
             
-            <p class="absolute bottom-3 left-4 text-lg z-10 text-3xl font-bold tracking-wide">  
-               {{ object }}
-            </p>
+            <div class="absolute bottom-3 left-4 text-lg z-10 text-2xl md:text-3xl 
+            font-bold tracking-wide">  
+                <h1>{{ album_cover.title }}</h1>
+                <h2 class="text-xs md:text-sm">
+                    {{album_cover.artist}}
+                </h2>
+            </div>
             
-            <div class="absolute bottom-0 w-full h-20 bg-gradient-to-t from-black 
+            <div class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-black 
             to-[rgba(0,0,0,0)] rounded-b-xl">
             </div>
-            <div class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 h-full 
-            w-full bg-[rgba(0,0,0,.35)] rounded-xl">
-            </div>
-            <p class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-red-600 
-            font-black -rotate-45 text-8xl tracking-widest">
-                DELETE
-            </p>
-            <img src="{{album_cover}}" 
+            
+            <img src="{{album_cover.photo_url}}" 
             alt="{{object}} cover art" 
             class="min-w-[25rem] md:min-w-[35rem] rounded-xl">
         </div>
+
         <form action="" method="POST"
-        class="absolute text-center -bottom-14 w-full">
+        class="absolute text-center -bottom-20 w-full">
             {% csrf_token %}
-            <input type="submit" value="Confirm"
-            class="px-10 font-bold text-2xl hover:text-red-600 border-r">
+            <input type="submit" value="DELETE"
+            class="px-10 font-bold text-2xl md:text-4xl hover:text-red-600 border-r">
             <a href="{% url 'my_albums' %}" 
-            class="px-8 font-bold text-2xl hover:text-red-600">
-                Cancel
+            class="px-8 font-bold text-2xl md:text-4xl hover:text-green-600">
+                SAVE
             </a>
         </form>
     </div> 
