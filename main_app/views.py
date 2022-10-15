@@ -1,6 +1,4 @@
 from os import environ
-from datetime import datetime
-import re
 
 from django.contrib import messages
 from django.shortcuts import redirect, render
@@ -8,6 +6,7 @@ from django.views.generic import TemplateView, CreateView, DeleteView
 from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.core import serializers
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Album, Profile
 
@@ -25,7 +24,7 @@ class Home(TemplateView):
 
 
 
-class CreateAlbum(TemplateView):
+class CreateAlbum(LoginRequiredMixin, TemplateView):
     template_name = 'main_app/create_album.html'
 
     def get(self, request, *args, **kwargs):
@@ -94,7 +93,7 @@ class Signup(CreateView):
 
 
 
-class Index(TemplateView):
+class Index(LoginRequiredMixin, TemplateView):
     template_name = 'main_app/index.html'
 
     def get(self, request):
@@ -104,7 +103,7 @@ class Index(TemplateView):
 
 
 
-class MyAlbums(TemplateView):
+class MyAlbums(LoginRequiredMixin, TemplateView):
     template_name = 'main_app/my_albums.html'
 
     def get(self, request):
@@ -113,7 +112,7 @@ class MyAlbums(TemplateView):
 
 
 
-class DeleteAlbum(DeleteView):
+class DeleteAlbum(LoginRequiredMixin, DeleteView):
     model = Album
     success_url = '/my_albums/'
     
