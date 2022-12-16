@@ -14,6 +14,11 @@
     transform: translate(-50%, -50%);
     width: 75%;
 }
+@media (max-width:640px ) {
+    .log-form > input + p {
+        width: 60%;
+    } 
+}
 /* username input */
 .log-form > input + p > input{
     width: 100%;
@@ -37,6 +42,11 @@
     top: 12rem;
     transform: translate(-50%, -50%);
     width: 75%;
+}
+@media (max-width:640px ) {
+    .errorlist + p {
+        width: 60%;
+    }
 }
 /* error username input */
 .errorlist + p > input{
@@ -62,6 +72,11 @@
     transform: translate(-50%, -50%);
     width: 75%;
 }
+@media (max-width:640px ) {
+    .log-form > input + p + p {
+        width: 60%;
+    }
+}
 /* password input */
 .log-form > input + p + p > input{
     width: 100%;
@@ -85,6 +100,11 @@
     top: 18rem;
     transform: translate(-50%, -50%);
     width: 75%;
+}
+@media (max-width:640px ) {
+    .errorlist + p + p {
+        width: 60%;
+    }
 }
 /* error password input */
 .errorlist + p + p > input{
@@ -111,6 +131,15 @@
     font-size: 1rem;
 }
 
+@media (max-width:640px ) {
+    .nonfield > li {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        bottom: 15rem;
+    }
+}
+
 
 
 
@@ -124,6 +153,11 @@
     transform: translate(-50%, -50%);
     width: 75%;
 }
+@media (max-width:640px ) {
+    .log-form > input + p + p + ul + p + p {
+        width: 60%;
+    }
+}
 /* error password conrirmation field */
 .log-form > input + p + p + ul + p + ul + p {
     position: absolute;
@@ -131,6 +165,11 @@
     top: 23rem;
     transform: translate(-50%, -50%);
     width: 75%;
+}
+@media (max-width:640px ) {
+    .log-form > input + p + p + ul + p + ul + p {
+        width: 60%;
+    }
 }
 /* password confirmation input */
 .log-form > input + p + p + ul + p + p > input {
@@ -154,6 +193,13 @@
     transform: translate(-50%, -50%);
     width: 75%;
 }
+@media (max-width:640px ) {
+    .log-form > input + p + p + ul {
+        width: 65%;
+        top: 32rem;
+    }
+}
+
 
 /* signup page error messages */
 .errorlist {
@@ -162,6 +208,15 @@
     font-size: .8rem;
     color: red;
     font-weight: 700;
+}
+@media (max-width:640px ) {
+    .errorlist {
+        padding-top: .5rem;
+        width: 65%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 
