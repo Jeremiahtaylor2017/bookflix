@@ -34,7 +34,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG') == 'True'
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
-ALLOWED_HOSTS = ['https://therecordsleeve-production.up.railway.app/', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -85,20 +85,14 @@ WSGI_APPLICATION = 'bookflix.wsgi.application'
 
 # Railway doesn't support docker-compose, so leaving blank
 DATABASES = {
-    "default": env('PGURL')
-    # 'default': {
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': env('PGDATABASE'),
-        # 'User': env('PGUSER'),
-        # 'PASSWORD': env('PGPASSWORD'),
-        # 'HOST': env('PGHOST'),
-        # 'PORT': env('PGPORT')
-        # 'NAME': os.environ.get('POSTGRES_NAME'),
-        # 'USER': os.environ.get('POSTGRES_USER'),
-        # 'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('POSTGRES_NAME'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
         # 'HOST': 'db',
         # 'PORT': 5432,
-    # }
+    }
 }
 
 
@@ -148,5 +142,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Moving from heroku to railway. Below was needed for heroku
-# import django_heroku
-# django_heroku.settings(locals())
+import django_heroku
+django_heroku.settings(locals())
