@@ -34,7 +34,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG') == 'True'
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://therecordsleeve-production.up.railway.app/', '127.0.0:1']
 
 
 # Application definition
